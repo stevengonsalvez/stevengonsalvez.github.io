@@ -1,0 +1,1 @@
+{"rule":"A_INFINITIVE","sentence":"^\\QMake the target application Service principal that is created an owner for itself\nAssign \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q access to the service principal\nThe terraform portion of generating federated credentials can then be generated as part of bootstrap in the pipeline of that repository.\\E$"}
