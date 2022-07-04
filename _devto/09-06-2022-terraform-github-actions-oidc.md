@@ -3,10 +3,9 @@ title: Github OIDC with terraform and Azure
 published: false
 description: Securing GitHub Actions with OIDC to create continuous infrastructure on Azure
 tags: 'azure, github actions, terraform, oidc, continuous deployment, cicd'
-cover_image: ./assets/ci.jpg
+cover_image: ./assets/ci.png
 canonical_url: null
 ---
-
 # Securing GitHub Actions with OIDC to create continuous infrastructure on Azure
 
 Continuous deployment workflows can deploy and manage lifecycle of cloud infrastructure on Azure, AWS, GCP etc. To do this, workflows would need to authenticate itself against the cloud provider using credentials that can be accessed from GitHub Secrets or an external vault appropriately. GitHub OIDC with cloud providers is now available to use, without the complication of credential management.
