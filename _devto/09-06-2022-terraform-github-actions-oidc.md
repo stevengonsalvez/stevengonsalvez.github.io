@@ -3,7 +3,7 @@ title: Github OIDC with terraform and Azure
 published: false
 description: Securing GitHub Actions with OIDC to create continuous infrastructure on Azure
 tags: 'azure, github actions, terraform, oidc, continuous deployment, cicd'
-cover_image: ./assets/ci.png
+cover_image: https://user-images.githubusercontent.com/9320602/177221304-5146ca58-f08f-4278-9afc-6d49d2e8e6de.png
 canonical_url: null
 ---
 # Securing GitHub Actions with OIDC to create continuous infrastructure on Azure
