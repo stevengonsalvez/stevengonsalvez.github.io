@@ -6,6 +6,7 @@ tags: 'sla, azure, cloud, reliability'
 cover_image: 'https://user-images.githubusercontent.com/9320602/177644504-b9502adc-b4d4-4a43-bd91-ed367e71a26c.png'
 canonical_url: null
 id: 1133920
+date: '2022-07-06T22:42:01Z'
 ---
 
 # Calculating the composite availability SLA for your stack 
