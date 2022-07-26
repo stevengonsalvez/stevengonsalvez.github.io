@@ -6,6 +6,7 @@ tags: 'bitwarden, enviroment, passwordmanager, dotenv'
 cover_image: 'https://user-images.githubusercontent.com/9320602/180967423-6ca1e032-866d-4b61-9eac-7331886068c7.png'
 canonical_url: null
 id: 1151752
+date: '2022-07-26T11:16:14Z'
 ---
 
 ## Use a password manager to organise your local env and dot env files.
