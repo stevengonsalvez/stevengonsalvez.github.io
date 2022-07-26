@@ -2,3 +2,13 @@ organisation
 GitOps
 azurerm
 utilising
+organise
+dotenv
+dotenvs
+optimise
+apikey
+bw
+zshrc
+apikeys
+dotfiles
+stevengonsalvez
