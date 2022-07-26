@@ -92,7 +92,8 @@ Create the following aliases and functions in your shell configuration (~/.zshrc
    ```
 
   - Function to create a new vault item out of the entire terminal session environment: `bwce "name_of_vault_key"`
-   ```
+    
+    ```
     bwce(){
       export | awk '{print "export " $0}' >/tmp/.env
       bw get template item | jq --arg a "$(cat /tmp/.env)" --arg b "$1" '.type = 2 | .secureNote.type = 0 | .notes = $a | .name = $b' | bw  encode | bw create item
@@ -130,7 +131,7 @@ region=eu-north
     - `bwe "az-example-dev"`: This will export all the environment variables in the secure note on that terminal session. 
 
 - To list and set
-    - `bwll "az-" to list all your azure vault items. e.g:
+    - `bwll "az-"` to list all your azure vault items. e.g:
       
       ```
       "az-example-dev"
@@ -142,10 +143,11 @@ region=eu-north
       And then you could execute `bwe` to set whichever setup you need.
 
 - Deleting stale items : `bwdd "item-name"`
+
     ```
-    bwdd(){
-	 bw delete item $(bw get item $1 | jq .id | tr -d '"')
-    }
+      bwdd(){
+	      bw delete item $(bw get item $1 | jq .id | tr -d '"')
+      }
     ```
 
 How you organise your keys/secrets is up to you, but using a password manager will ensure 
