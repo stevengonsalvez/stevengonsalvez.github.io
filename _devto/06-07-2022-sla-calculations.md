@@ -51,20 +51,20 @@ Let us consider the sample space of the following detail.
 
 >For the Mutually exclusive events that either AR1 or AR2 is down, but not both simultaneously
 
-$$P(AR1 \space and \space AR2) = P \left( AR1 \space ∩ \space AR2 ) = 0 \right)$$
+{% katex %} P(AR1 \space and \space AR2) = P \left( AR1 \space ∩ \space AR2 ) = 0 \right){% endkatex %}
 
 There by the probability of unavailability is 0 for the mutually exclusive events both occuring
 
 > For the Mutually exclusive events , then probability of either occuring
 
-$$P(AR1 \space or \space AR2) = P(AR1 \space ∪ \space AR2 ) = (P(AR1) \space +  \space P(AR2) - P(AR1 ∩ AR2) = P(AR1) \space + \space  P(AR2) \space - \space 0 \space =  P(AR1) \space + \space  P(AR2)$$
+{% katex %}P(AR1 \space or \space AR2) = P(AR1 \space ∪ \space AR2 ) = (P(AR1) \space +  \space P(AR2) - P(AR1 ∩ AR2) = P(AR1) \space + \space  P(AR2) \space - \space 0 \space =  P(AR1) \space + \space  P(AR2){% endkatex %}
 
 calculating that as values
 - Probability of AR1 to be down : 0.0005
 - Probability of AR1 to be down : 0.0005
 
 *Probability of either to be down:*
-$$P(AR1 \space and \space AR2) \space = 0.0005 + 0.0005 = 0.001 $$
+{% katex %} P(AR1 \space and \space AR2) \space = 0.0005 + 0.0005 = 0.001 {% endkatex %}
 
 
 #### Calculating the probability of only operating on a single region
@@ -75,7 +75,7 @@ Two independent events
 
 Overall probability of only being operational on a single region
 
-$$P(FD \space and \space AR1|AR2) \space = \space P(FD \space ∪ \space AR1|AR2 )\space = P(FD)P(AR1|AR2) = 0.999 \space * \space 0.9999 = 0.9989001 $$
+{% katex %} P(FD \space and \space AR1|AR2) \space = \space P(FD \space ∪ \space AR1|AR2 )\space = P(FD)P(AR1|AR2) = 0.999 \space * \space 0.9999 = 0.9989001 {% endkatex %}
 
 > In percentage = 99.89001%.
 
@@ -86,16 +86,16 @@ $$P(FD \space and \space AR1|AR2) \space = \space P(FD \space ∪ \space AR1|AR2
 
 - AR1 and AR2 are down as independent events AR1||AR2
 
-  $$P(AR1 ∪ AR2) = P(AR1) \space * \space P(AR2) = 0.0005 * 0.0005 = 0.00000025 $$
+  {% katex %} P(AR1 ∪ AR2) = P(AR1) \space * \space P(AR2) = 0.0005 * 0.0005 = 0.00000025 {% endkatex %}
 
 - FD is down as a independent event from AR1 and AR2 being down as independent events AR1||AR2
 
-    $$P(FD ∩ AR1||AR2) = P(FD) \space * \space P(AR1||AR2) = 0.0001 * 0.00000025 = 0.00000000025 $$
+    {% katex %} P(FD ∩ AR1||AR2) = P(FD) \space * \space P(AR1||AR2) = 0.0001 * 0.00000025 = 0.00000000025 {% endkatex %}
 
 
 - FD is down as a mutually exclusive event from AR1 and AR2 being down as independent events, but either can occur
 
-    $$P(FD U AR1||AR2) = P(FD) \space +  \space P(AR1||AR2) \space - \space P(FD ∩ AR1||AR2)) = 0.0001 + 0.00000025 - 0.00000000025 = 0.00010025 $$
+    {% katex %} P(FD U AR1||AR2) = P(FD) \space +  \space P(AR1||AR2) \space - \space P(FD ∩ AR1||AR2)) = 0.0001 + 0.00000025 - 0.00000000025 = 0.00010025 {% endkatex %}
 
 Overall probability of availability = 1 - 0.00010025 = 0.99989975
 
@@ -124,13 +124,13 @@ SLA calculation guide for the following detail:
 
 > Azure App service across both regions being down as independent events simultaneously
 
-$$ 0.05 \% * 0.05 \%   = 0.000025\% $$
+{% katex %} 0.05 \% * 0.05 \%   = 0.000025\% {% endkatex %}
 
 So availability: 99.999975%
 
 > Either of Akamai OR Azure Frontdoor Or Azure App service across both regions being down
 
-$$ 99.999\% * 99.99\% * 99.999975\% = 99.9889\% $$
+{% katex %} 99.999\% * 99.99\% * 99.999975\% = 99.9889\% {% endkatex %}
 
 > The overall SLA of the stack is `99.9889%`
 
@@ -154,19 +154,19 @@ SLA calculation guide for the following detail:
 
 > Composite Availability of App Service and Redis within a region (inclusive of private link)
 
-$$ 99.95 \% * 99.99\% * 99.9 \%   = 99.84\% $$
+{% katex %} 99.95 \% * 99.99\% * 99.9 \%   = 99.84\% {% endkatex %}
 
 unavailability of a region : 0.16% (100 - 99.84)
 
 > Unavailability of two regions of App Service, private link and Redis.
 
-$$ 0.16 \% * 0.16 \%   = 0.000256\% $$
+{% katex %} 0.16 \% * 0.16 \%   = 0.000256\% {% endkatex %}
 
 > Compound Availability of App service and Redis over two regions: 99.999744%
 
 > Compound availability of the stack (Akamai * Frontdoor * ( (appservice + redis)both regions) ))
 
-$$ 99.999 \% * 99.99\% * 99.999744 \%   = 99.9887\% $$
+{% katex %} 99.999 \% * 99.99\% * 99.999744 \%   = 99.9887\% {% endkatex %}
 
 
 > The overall SLA of the stack is `99.9887%`
