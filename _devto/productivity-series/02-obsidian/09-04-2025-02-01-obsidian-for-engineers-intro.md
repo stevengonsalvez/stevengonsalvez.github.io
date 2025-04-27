@@ -4,7 +4,7 @@ published: false
 description: "How to build a knowledge management system that works for the unique needs of software engineers"
 tags: 'productivity, obsidian, notes, knowledge, pkm'
 series: "The Complete Software Engineer's Productivity Stack"
-cover_image: 'https://raw.githubusercontent.com/stevengonsalvez/stevengonsalvez.github.io/main/_devto/assets/obsidian-engineers.png'
+cover_image: 'https://github.com/user-attachments/assets/adc50334-4a10-4e6f-95ef-9b663389aac9'
 canonical_url: null
 ---
 

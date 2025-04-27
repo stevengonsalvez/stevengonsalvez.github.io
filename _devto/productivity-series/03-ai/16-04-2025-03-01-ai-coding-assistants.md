@@ -4,7 +4,7 @@ published: false
 description: "Navigate the AI coding assistant landscape to find the perfect balance between performance, cost-effectiveness, and workflow integration for your development style"
 tags: 'ai, ai-coding-assistant, development, productivity, coding-tools, software-engineering, coding'
 series: "The Complete Software Engineer's Productivity Stack"
-cover_image: 'https://raw.githubusercontent.com/stevengonsalvez/stevengonsalvez.github.io/main/_devto/assets/productivity-series/ai/ai-coding-header.png'
+cover_image: 'https://images.unsplash.com/photo-1607431067517-fda93b3e0aee?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 canonical_url: null
 ---
 
