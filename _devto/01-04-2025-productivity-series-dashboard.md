@@ -1,8 +1,8 @@
 ---
 title: "The Complete Software Engineer's Productivity Stack"
 published: true
-description: "A comprehensive guide to boosting your productivity as a software engineer - from your desktop setup to AI assistance"
-tags: 'productivity, engineering, workflow, developer, tooling'
+description: "Build the ultimate productivity stack as a software engineer — from engineering your desktop to mastering AI coding assistants."
+tags: 'productivity, engineering, workflow, developer, tooling, ai, developer tools'
 series: "The Complete Software Engineer's Productivity Stack"
 cover_image: 'https://raw.githubusercontent.com/stevengonsalvez/stevengonsalvez.github.io/main/_devto/assets/productivity-dashboard-header.png'
 canonical_url: null
@@ -77,14 +77,15 @@ Think of this post as your series dashboard—a living index that I'll update as
 - [ ] **Part 4:** Advanced Linking - Building Your Knowledge Graph
 - [ ] **Part 5:** Templates & Automation - Never Start from Zero
 - [ ] **Part 6:** The Engineer's Starter Kit (Template Vault)
+- [ ] **Part 7:** Advance and Super power your workflows with Obsidian
 
 ### Series 3: AI-Augmented Development
-- [ ] **Part 1:** Beyond the Hype - What AI Can (and Can't) Do For Developers
-- [ ] **Part 2:** Evaluating AI Tools - A Framework
-- [ ] **Part 3:** IDE Integration - Copilot, Cursor, and Beyond
-- [ ] **Part 4:** Command-Line AI - Aider, Cline, and More
-- [ ] **Part 5:** Building Your MCP - Personal AI Infrastructure
-- [ ] **Part 6:** Guardrails - Avoiding AI Dependency
+- [ ] **Part 1:** Finding the Best AI Coding Assistant: From Pure Vibe to Practical Power
+- [ ] **Part 2:** Beyond the Hype: What Truly Makes an AI a Great Coding Partner?
+- [ ] **Part 3:** Performance and Value of AI coding Agents: IDE and Terminal (aider, claude code, openai codex, cursor, cline, windsurf, trae)
+- [ ] **Part 4:** Guide to better precision with your AI coding Tools : Prompts, context, rules (cursor, claude desktop, cline, aider etc)
+- [ ] **Part 5:** Enhancing agentic coding with MCP: building your own Personal AI Infrastructure
+
 
 ## Who Am I?
 
