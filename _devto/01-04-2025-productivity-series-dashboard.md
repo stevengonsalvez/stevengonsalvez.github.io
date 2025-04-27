@@ -4,7 +4,7 @@ published: true
 description: "Build the ultimate productivity stack as a software engineer — from engineering your desktop to mastering AI coding assistants."
 tags: 'productivity, engineering, workflow, developer, tooling, ai, developer tools'
 series: "The Complete Software Engineer's Productivity Stack"
-cover_image: 'https://raw.githubusercontent.com/stevengonsalvez/stevengonsalvez.github.io/main/_devto/assets/productivity-dashboard-header.png'
+cover_image: 'https://media.istockphoto.com/id/1459584978/photo/digital-transformation-concept-high-speed-agile-development.webp?a=1&b=1&s=612x612&w=0&k=20&c=vJJzQgQ9bqvJQcMRYqPDWIh3-xosahltw71UEAyGT7A='
 canonical_url: null
 ---
 
