@@ -51,15 +51,24 @@ I once asked a junior developer and a senior architect to explain the same micro
 
 The best AI coding assistants have this same ability to meet you at your level and explain things conceptually before diving into implementation details.
 
-### Debugging Intelligence
+### Refactoring and Debugging Intelligence in brownfield code
 
-Any code monkey can generate code. The real test comes when things break.
+Basic code generation is common and is fairly trivial now; the true measure of an AI or developer is their ability to effectively refactor, debug and troubleshoot, build upon brownfield evolving codebases. 
 
 The best AI assistants are like that senior developer who can glance at an error message and immediately say, "Ah, check your authentication middleware – you're probably missing a token refresh."
 
 Lesser tools will offer generic advice like "check your syntax" or "make sure your variables are defined" – technically correct but not particularly helpful.
 
 This debugging intelligence comes from a combination of pattern recognition across millions of code examples and deeper reasoning about program logic and execution flow. It's also where specialized coding tools sometimes outperform general-purpose models, despite the latter having more overall "intelligence."
+
+### Security and Performance Sensitivity
+
+Beyond just working code, a great AI agent must also understand security and performance trade-offs. Without structured reasoning or context-aware rules, even top AI agents can introduce critical mistakes. For instance, while using Cursor (without any additional rules or instructions) with Claude 3.7, the AI agent *modified* backend code to use the Supabase `service_role` key instead of the intended `anon` key for client-side operations — a major security flaw because it effectively broke Postgres RLS (Row-Level Security) protections. The `service_role` key has elevated privileges meant only for secure server-side environments. A similar issue also occurred with GPT-4o during a comprehensive refactoring involving storage buckets and Postgres access in Supabase. These incidents highlight why context management, explicit instruction, and enforcing operational rules are absolutely crucial when using AI coding assistants at scale.
+
+### Architectural Complexity
+
+Good AI coding assistants shine when dealing with architectural complexity. It's one thing to help write a utility function; it's another to reason about dependency injection in a service-oriented architecture, or how event-driven systems coordinate between microservices. The best models don't just generate code — they help you make smart design decisions across layers.
+
 
 ## Cost-Effectiveness Analysis: The Price of AI Productivity
 
