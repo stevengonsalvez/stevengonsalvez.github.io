@@ -39,8 +39,6 @@ jobs:
         files: '_devto/**/*.md'
         branch: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.ref || 'main' }}
         conventional_commits: true
-        # CRITICAL: Force dry_run mode for PRs to prevent push attempts
-        dry_run: ${{ github.event_name == 'pull_request' }}
 
     # Add comment with dev.to changes if it's a pull request
     - uses: actions-ecosystem/action-create-comment@v1
@@ -48,7 +46,7 @@ jobs:
       with:
         github_token: ${{ secrets.SAML_GITHUB_TOKEN }}
         body: |
-          Dev.to publishing preview:
+          Dev.to publishing results:
           ```
           ${{ steps.publish_devto.outputs.result_summary }}
           ```
