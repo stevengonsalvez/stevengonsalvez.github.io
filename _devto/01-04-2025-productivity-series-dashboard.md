@@ -66,7 +66,7 @@ Think of this post as your series dashboard—a living index that I'll update as
 ### Series 1: Engineering Your Desktop
 - [ ] **Part 1:** Foundation - The Philosophy of a Developer's Desktop
 - [ ] **Part 2:** Terminal Mastery - Beyond Basic Bash
-- [ ] **Part 3:** Dotfiles - Version Controlling Your Digital Home
+- [ ] **Part 3:** Dotfiles,stow,mise,nix - Version Controlling Your Digital Home
 - [ ] **Part 4:** Keyboard-Driven Workflows with Raycast/Alfred
 - [ ] **Part 5:** Automating Everything - Scripts, Snippets, and Shortcuts
 
