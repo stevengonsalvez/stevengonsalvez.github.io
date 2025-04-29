@@ -7,6 +7,7 @@ series: The Complete Software Engineer's Productivity Stack
 cover_image: 'https://images.unsplash.com/photo-1743862558324-64de6d680fbb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 canonical_url: null
 id: 2445420
+date: '2025-04-29T22:13:43Z'
 ---
 
 # Beyond the Hype: What Truly Makes an AI a Great Coding Partner?

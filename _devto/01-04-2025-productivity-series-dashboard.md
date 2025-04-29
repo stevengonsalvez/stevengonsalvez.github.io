@@ -7,6 +7,7 @@ series: The Complete Software Engineer's Productivity Stack
 cover_image: 'https://media.istockphoto.com/id/1459584978/photo/digital-transformation-concept-high-speed-agile-development.webp?a=1&b=1&s=612x612&w=0&k=20&c=vJJzQgQ9bqvJQcMRYqPDWIh3-xosahltw71UEAyGT7A='
 canonical_url: null
 id: 2445418
+date: '2025-04-29T22:13:45Z'
 ---
 
 # The Complete Software Engineer's Productivity Stack
