@@ -1,6 +1,6 @@
 ---
 title: The Complete Software Engineer's Productivity Stack
-published: false
+published: true
 description: Build the ultimate productivity stack as a software engineer — from engineering your desktop to mastering AI coding assistants.
 tags: 'productivity, developer, ai, workflow'
 series: The Complete Software Engineer's Productivity Stack

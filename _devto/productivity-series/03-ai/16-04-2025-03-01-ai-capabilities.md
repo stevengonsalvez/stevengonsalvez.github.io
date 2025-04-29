@@ -1,6 +1,6 @@
 ---
 title: 'Beyond the Hype: What Truly Makes an AI a Great Coding Partner?'
-published: false
+published: true
 description: 'Discover what makes an AI coding assistant truly powerful — from architecture understanding to debugging, security, and real-world benchmarks. Beyond the hype and flashy scores.'
 tags: 'ai, productivity, development, benchmarks'
 series: The Complete Software Engineer's Productivity Stack
