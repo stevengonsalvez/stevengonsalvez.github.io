@@ -7,6 +7,7 @@ series: The Complete Software Engineer's Productivity Stack
 cover_image: 'https://ucarecdn.com/10628d02-5130-4154-8b40-b2feab42a194/CleanShot20250429at232729.png'
 canonical_url: null
 id: 2446989
+date: '2025-04-29T22:42:49Z'
 ---
 
 # Why Traditional Notes Fail Engineers
