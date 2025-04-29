@@ -7,6 +7,7 @@ series: The Complete Software Engineer's Productivity Stack
 cover_image: 'https://images.unsplash.com/photo-1607431067517-fda93b3e0aee?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 canonical_url: null
 id: 2445419
+date: '2025-04-29T22:13:46Z'
 ---
 
 # AI for Coders and Pure Vibe: Finding Your Perfect Match
