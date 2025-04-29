@@ -18,4 +18,4 @@ Software engineers face unique knowledge management challenges. We need to track
 
 This is the first post in the "Obsidian for Engineers" series. Stay tuned for the full content!
 
-*Check the [series dashboard](https://dev.to/stevengonsalvez/the-complete-software-engineers-productivity-stack-abc) for updates on when this article will be published.*
+*Check the [series dashboard](https://dev.to/stevengonsalvez/the-complete-software-engineers-productivity-stack-5b4k) for updates on when this article will be published.*
