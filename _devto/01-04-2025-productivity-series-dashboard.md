@@ -1,12 +1,13 @@
 ---
 title: The Complete Software Engineer's Productivity Stack
-published: false
+published: true
 description: Build the ultimate productivity stack as a software engineer — from engineering your desktop to mastering AI coding assistants.
 tags: 'productivity, developer, ai, workflow'
 series: The Complete Software Engineer's Productivity Stack
 cover_image: 'https://media.istockphoto.com/id/1459584978/photo/digital-transformation-concept-high-speed-agile-development.webp?a=1&b=1&s=612x612&w=0&k=20&c=vJJzQgQ9bqvJQcMRYqPDWIh3-xosahltw71UEAyGT7A='
 canonical_url: null
 id: 2445418
+date: '2025-04-29T22:13:45Z'
 ---
 
 # The Complete Software Engineer's Productivity Stack
@@ -81,8 +82,8 @@ Think of this post as your series dashboard—a living index that I'll update as
 - [ ] **Part 7:** Advance and Super power your workflows with Obsidian
 
 ### Series 3: AI-Augmented Development
-- [ ] **Part 1:** Finding the Best AI Coding Assistant: From Pure Vibe to Practical Power
-- [ ] **Part 2:** Beyond the Hype: What Truly Makes an AI a Great Coding Partner?
+- [ ] **Part 1:** [Finding the Best AI Coding Assistant: From Pure Vibe to Practical Power](https://dev.to/stevengonsalvez/finding-the-best-ai-coding-assistant-from-pure-vibe-to-practical-power-bl8)
+- [ ] **Part 2:** [Beyond the Hype: What Truly Makes an AI a Great Coding Partner?](https://dev.to/stevengonsalvez/beyond-the-hype-what-truly-makes-an-ai-a-great-coding-partner-2i7c)
 - [ ] **Part 3:** Performance and Value of AI coding Agents: IDE and Terminal (aider, claude code, openai codex, cursor, cline, windsurf, trae)
 - [ ] **Part 4:** Guide to better precision with your AI coding Tools : Prompts, context, rules (cursor, claude desktop, cline, aider etc)
 - [ ] **Part 5:** Enhancing agentic coding with MCP: building your own Personal AI Infrastructure

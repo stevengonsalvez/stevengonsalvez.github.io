@@ -1,11 +1,13 @@
 ---
-title: "Obsidian for Engineers - Why Traditional Notes Fail Developers"
-published: false
-description: "How to build a knowledge management system that works for the unique needs of software engineers"
-tags: 'productivity, obsidian, notes, knowledge, pkm'
-series: "The Complete Software Engineer's Productivity Stack"
-cover_image: 'https://github.com/user-attachments/assets/adc50334-4a10-4e6f-95ef-9b663389aac9'
+title: Obsidian for Engineers - Why Traditional Notes Fail Developers
+published: true
+description: How to build a knowledge management system that works for the unique needs of software engineers
+tags: 'productivity, obsidian, notes, knowledge'
+series: The Complete Software Engineer's Productivity Stack
+cover_image: 'https://ucarecdn.com/10628d02-5130-4154-8b40-b2feab42a194/CleanShot20250429at232729.png'
 canonical_url: null
+id: 2446989
+date: '2025-04-29T22:42:49Z'
 ---
 
 # Why Traditional Notes Fail Engineers
@@ -18,4 +20,4 @@ Software engineers face unique knowledge management challenges. We need to track
 
 This is the first post in the "Obsidian for Engineers" series. Stay tuned for the full content!
 
-*Check the [series dashboard](https://dev.to/stevengonsalvez/the-complete-software-engineers-productivity-stack-abc) for updates on when this article will be published.*
+*Check the [series dashboard](https://dev.to/stevengonsalvez/the-complete-software-engineers-productivity-stack-5b4k) for updates on when this article will be published.*
