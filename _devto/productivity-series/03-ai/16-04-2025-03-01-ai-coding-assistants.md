@@ -175,7 +175,7 @@ But like any superpower, they need control — otherwise, you're just throwing s
 
 </br></br>
 
-**Ready to dive deeper?** In Part 2 of "The Complete Software Engineer's Productivity Stack," we'll move beyond the initial exploration and dissect **What Makes an AI Good at Coding**. We'll analyze the crucial capabilities that separate truly effective AI coding partners from the rest, exploring aspects like code understanding, debugging intelligence, and documentation prowess. Stay tuned!
+**Ready to dive deeper?** In Part 2 of "[The Complete Software Engineer's Productivity Stack](https://dev.to/stevengonsalvez/the-complete-software-engineers-productivity-stack-5b4k)," we'll move beyond the initial exploration and dissect **What Makes an AI Good at Coding**. We'll analyze the crucial capabilities that separate truly effective AI coding partners from the rest, exploring aspects like code understanding, debugging intelligence, and documentation prowess. Stay tuned!
 
 
 ## References
