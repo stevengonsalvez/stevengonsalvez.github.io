@@ -3,12 +3,14 @@ title: 'Beyond the Hype: What Truly Makes an AI a Great Coding Partner?'
 published: true
 description: 'Discover what makes an AI coding assistant truly powerful — from architecture understanding to debugging, security, and real-world benchmarks. Beyond the hype and flashy scores.'
 tags: 'ai, productivity, development, benchmarks'
-series: The Complete Software Engineer's Productivity Stack
+series: AI-Augmented Development
 cover_image: 'https://images.unsplash.com/photo-1743862558324-64de6d680fbb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 canonical_url: null
 id: 2445420
 date: '2025-04-29T22:13:43Z'
 ---
+
+*Wait, you stumbled in here without reading [Finding the Best AI Coding Assistant: From Pure Vibe to Practical Power](https://dev.to/stevengonsalvez/finding-the-best-ai-coding-assistant-from-pure-vibe-to-practical-power-bl8)? That's like walking into the second season of a Netflix show and wondering why everyone's mad at that one character. This is part 2 of our AI coding adventure, where we get into the nitty-gritty of what makes these silicon sidekicks actually useful.*
 
 # Beyond the Hype: What Truly Makes an AI a Great Coding Partner?
 
