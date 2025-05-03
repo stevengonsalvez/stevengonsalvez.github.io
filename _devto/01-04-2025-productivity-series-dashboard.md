@@ -39,7 +39,7 @@ The series breaks down into three major pillars:
 
 We'll dive into creating a desktop environment that feels like an extension of your mind—from terminal setups that predict what you need, to dotfiles management that keeps your settings perfectly synced across machines, to keyboard-driven workflows that let you navigate your digital world at the speed of thought.
 
-It's like turning a standard-issue sedan into a Formula 1 race car customized to your exact specifications.
+It's like turning a standard-issue sedan into a race car customized to your exact specifications.
 
 ### 2. Obsidian for Software Engineers 📓
 
