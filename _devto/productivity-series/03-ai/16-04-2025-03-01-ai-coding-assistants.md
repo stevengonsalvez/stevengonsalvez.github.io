@@ -3,7 +3,7 @@ title: 'Finding the Best AI Coding Assistant: From Pure Vibe to Practical Power'
 published: true
 description: 'Navigate the AI coding assistant landscape to find the perfect balance between performance, cost-effectiveness, and workflow integration for your development style'
 tags: 'ai, productivity, development, coding'
-series: The Complete Software Engineer's Productivity Stack
+series: AI-Augmented Development
 cover_image: 'https://images.unsplash.com/photo-1607431067517-fda93b3e0aee?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 canonical_url: null
 id: 2445419

@@ -35,7 +35,7 @@ jobs:
       id: publish_devto
       with:
         devto_key: ${{ secrets.DEVTO_TOKEN }}
-        github_token: ${{ secrets.SAML_GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         files: '_devto/**/*.md'
         branch: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.ref || 'main' }}
         conventional_commits: true
@@ -44,7 +44,7 @@ jobs:
     - uses: actions-ecosystem/action-create-comment@v1
       if: ${{ github.event_name == 'pull_request' }}
       with:
-        github_token: ${{ secrets.SAML_GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         body: |
           Dev.to publishing results:
           ```
