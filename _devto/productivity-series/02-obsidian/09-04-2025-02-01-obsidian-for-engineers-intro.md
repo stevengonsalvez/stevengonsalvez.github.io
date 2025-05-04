@@ -1,6 +1,6 @@
 ---
 title: Obsidian for Engineers - Why Traditional Notes Fail Developers
-published: true
+published: false
 description: How to build a knowledge management system that works for the unique needs of software engineers
 tags: 'productivity, obsidian, notes, knowledge'
 series: Obsidian for Engineers
