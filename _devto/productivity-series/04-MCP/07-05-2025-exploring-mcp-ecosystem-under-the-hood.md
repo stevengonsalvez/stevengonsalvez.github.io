@@ -12,7 +12,7 @@ date: '2025-05-05T18:29:17Z'
 
 # Exploring the MCP Ecosystem: Looking Under the Hood
 
-In my [previous article](https://dev.to/stevengonsalvez/introduction-to-model-context-protocol-mcp-the-usb-c-of-ai-integrations-3k01-temp-slug-1067875?preview=9f1f1b1bea3494c6e664e3c9ae268a2de57e51b56157980cbd0177838362410fd6c3791bffb9c3461f7a1cafc2d2b6068ae3ead99084bb5e2b3c3679), I introduced Model Context Protocol (MCP) as the USB-C of AI integrations - a standardized way to connect LLMs with external tools and data sources. Today, we're strapping on our digital spelunking gear and descending deeper into the mechanics of MCP.
+In my [previous article](https://dev.to/stevengonsalvez/introduction-to-model-context-protocol-mcp-the-usb-c-of-ai-integrations-2h76), I introduced Model Context Protocol (MCP) as the USB-C of AI integrations - a standardized way to connect LLMs with external tools and data sources. Today, we're strapping on our digital spelunking gear and descending deeper into the mechanics of MCP.
 
 Fair warning: we're about to get technical. But don't worry – even if you're not a hardcore developer, I've sprinkled in enough analogies and plain English explanations that you'll walk away with a much better understanding of how MCP actually works. So, grab your favorite caffeinated beverage and let's dive in!
 
