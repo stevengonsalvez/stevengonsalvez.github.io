@@ -7,6 +7,7 @@ series: Model Context Protocol (MCP) Series
 cover_image: 'https://images.unsplash.com/photo-1675044794023-2c70962f4899?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 canonical_url: null
 id: 2460241
+date: '2025-05-05T18:20:57Z'
 ---
 
 # Introduction to Model Context Protocol (MCP): The USB-C of AI Integrations

@@ -6,6 +6,7 @@ tags: 'ai, modelcontextprotocol, mcp, security'
 series: Model Context Protocol (MCP) Series
 cover_image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 canonical_url: null
+id: 2461570
 ---
 
 # Exploring the MCP Ecosystem: Looking Under the Hood
