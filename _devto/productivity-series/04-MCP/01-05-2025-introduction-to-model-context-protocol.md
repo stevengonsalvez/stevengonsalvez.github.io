@@ -2,7 +2,7 @@
 title: "Introduction to Model Context Protocol (MCP): The USB-C of AI Integrations"
 published: false
 description: "Discover how Model Context Protocol is revolutionizing AI integrations by standardizing how AI models connect with tools and data sources, making complex workflows simpler and more powerful."
-tags: 'ai-integration, modelcontextprotocol, mcp, standards'
+tags: 'ai, modelcontextprotocol, mcp, standards'
 series: Model Context Protocol (MCP) Series
 cover_image: 'https://images.unsplash.com/photo-1675044794023-2c70962f4899?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 canonical_url: null
@@ -36,7 +36,10 @@ With MCP (and good agent frameworks), you just need M clients and N servers—a 
 This is reminiscent of the famous **Metcalfe's Law** in networks, which states that the value of a network grows proportionally to the square of the number of users.  
 Similarly, the *pain* of maintaining AI integrations grew at a quadratic rate—until MCP arrived to linearize it. |
 
-Think of MCP like the RESTful API standard, but specifically designed for the unique needs of AI models. It's a contract that says, "Here's how we ask for information, here's how we provide it, and here's how we handle errors.(*although errors could do with some improvements*)"
+
+So why not just use REST APIs or gRPC directly?
+
+Well, MCP actually borrows the best from both worlds. It keeps the descriptive, JSON-based simplicity of REST that plays nicely with LLMs, while also taking inspiration from gRPC’s “reflection” abilities — letting clients discover what tools are available without hardcoding the schema. The difference is that gRPC was designed to be compact and efficient for machine-to-machine comms — great for backend services, but not ideal for AI agents, which need more context, metadata, and flexibility for function calling. You’d have to bolt on extra layers to make gRPC work well for an LLM. MCP gives you that out of the box.
 
 ## How MCP Actually Works: Simple Yet Powerful
 
@@ -56,7 +59,9 @@ The beauty is in the standardization. Each MCP server exposes three main types o
 - **Resources**: Data sources that models can access (like your local filesystem)
 - **Prompts**: Pre-defined templates to help models use tools effectively
 
-And here's where the magic happens: once you have an MCP server for GitHub and another for Slack, *any* MCP client can talk to them. Switch from Claude to GPT-4? No problem. The servers don't care—they speak MCP, not model-specific languages.
+
+
+And here's where the magic happens: once you have an MCP server for GitHub and another for Slack, *any* MCP client can talk to them. Switch from Langchain to autogen or switch from Claude to gpt-4 ? No problem. The servers don't care—they speak MCP, not model-specific languages.
 
 ## The "Before MCP" Landscape: Framework Fragmentation
 
