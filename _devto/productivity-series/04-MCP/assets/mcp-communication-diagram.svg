@@ -1,0 +1,131 @@
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="900" height="700" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333">MCP Communication Mechanisms</text>
+  
+  <!-- Main Diagram: Two-column layout -->
+  <rect x="50" y="70" width="800" height="280" rx="10" fill="#fff" stroke="#ddd" stroke-width="2" />
+  
+  <!-- Column titles -->
+  <text x="225" y="95" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#333">STDIO Transport</text>
+  <text x="675" y="95" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#333">SSE Transport</text>
+  
+  <!-- Divider line -->
+  <line x1="450" y1="70" x2="450" y2="350" stroke="#ddd" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- STDIO Column -->
+  <rect x="75" y="110" width="300" height="200" rx="10" fill="#f0f7ff" stroke="#4a6fc4" stroke-width="1" />
+  
+  <!-- STDIO Components -->
+  <rect x="100" y="130" width="100" height="60" rx="5" fill="#fff" stroke="#4a6fc4" stroke-width="1" />
+  <text x="150" y="165" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Host App</text>
+  
+  <rect x="250" y="130" width="100" height="60" rx="5" fill="#fff" stroke="#4a6fc4" stroke-width="1" />
+  <text x="300" y="165" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">MCP Server</text>
+  
+  <!-- In-process indicator -->
+  <rect x="75" y="230" width="300" height="30" rx="5" fill="#e6f4ea" stroke="#34a853" stroke-width="1" />
+  <text x="225" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">In-Process Communication (Same Machine)</text>
+  
+  <!-- STDIO arrows -->
+  <line x1="200" y1="160" x2="250" y2="160" stroke="#4a6fc4" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="225" y="150" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">stdin</text>
+  
+  <line x1="250" y1="180" x2="200" y2="180" stroke="#4a6fc4" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="225" y="195" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">stdout</text>
+  
+  <!-- STDIO properties -->
+  <text x="225" y="280" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Local execution only</text>
+  <text x="225" y="300" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Simple, direct JSON-RPC</text>
+  
+  <!-- SSE Column -->
+  <rect x="475" y="110" width="350" height="200" rx="10" fill="#fff3e0" stroke="#fb8c00" stroke-width="1" />
+  
+  <!-- SSE Components -->
+  <rect x="500" y="130" width="100" height="60" rx="5" fill="#fff" stroke="#fb8c00" stroke-width="1" />
+  <text x="550" y="165" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">MCP Client</text>
+  
+  <rect x="700" y="130" width="100" height="60" rx="5" fill="#fff" stroke="#fb8c00" stroke-width="1" />
+  <text x="750" y="165" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">MCP Server</text>
+  
+  <!-- Network indicator -->
+  <rect x="475" y="230" width="350" height="30" rx="5" fill="#fce4ec" stroke="#e91e63" stroke-width="1" />
+  <text x="650" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Network Communication (HTTP/HTTPS)</text>
+  
+  <!-- SSE arrows -->
+  <line x1="600" y1="140" x2="700" y2="140" stroke="#fb8c00" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="650" y="130" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">HTTP POST (Client to Server)</text>
+  
+  <line x1="700" y1="170" x2="600" y2="170" stroke="#fb8c00" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,3" />
+  <text x="650" y="185" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">SSE Stream (Server to Client)</text>
+  
+  <!-- SSE properties -->
+  <text x="650" y="280" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Remote execution over network</text>
+  <text x="650" y="300" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Real-time, persistent connection</text>
+  
+  <!-- Future Directions Section -->
+  <rect x="50" y="370" width="800" height="280" rx="10" fill="#fff" stroke="#ddd" stroke-width="2" />
+  <text x="450" y="395" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Future Communication Directions</text>
+  
+  <!-- Agent Graph section -->
+  <rect x="75" y="410" width="350" height="220" rx="10" fill="#e8f5e9" stroke="#43a047" stroke-width="1" />
+  <text x="250" y="430" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Agent Graph Architecture</text>
+  
+  <!-- Graph nodes -->
+  <circle cx="150" cy="480" r="25" fill="#fff" stroke="#43a047" stroke-width="2" />
+  <text x="150" y="485" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Agent A</text>
+  
+  <circle cx="250" cy="480" r="25" fill="#fff" stroke="#43a047" stroke-width="2" />
+  <text x="250" y="485" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Agent B</text>
+  
+  <circle cx="350" cy="480" r="25" fill="#fff" stroke="#43a047" stroke-width="2" />
+  <text x="350" y="485" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Agent C</text>
+  
+  <circle cx="200" cy="550" r="25" fill="#fff" stroke="#43a047" stroke-width="2" />
+  <text x="200" y="555" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Tool X</text>
+  
+  <circle cx="300" cy="550" r="25" fill="#fff" stroke="#43a047" stroke-width="2" />
+  <text x="300" y="555" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Tool Y</text>
+  
+  <!-- Graph connections -->
+  <line x1="150" y1="505" x2="200" y2="525" stroke="#43a047" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <line x1="250" y1="505" x2="200" y2="525" stroke="#43a047" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <line x1="250" y1="505" x2="300" y2="525" stroke="#43a047" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <line x1="350" y1="505" x2="300" y2="525" stroke="#43a047" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <line x1="175" y1="480" x2="225" y2="480" stroke="#43a047" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <line x1="275" y1="480" x2="325" y2="480" stroke="#43a047" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <text x="250" y="590" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Multi-agent coordination</text>
+  <text x="250" y="610" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Shared context awareness</text>
+  
+  <!-- Bi-directional Streaming section -->
+  <rect x="475" y="410" width="350" height="220" rx="10" fill="#e3f2fd" stroke="#1976d2" stroke-width="1" />
+  <text x="650" y="430" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Bi-directional Streaming</text>
+  
+  <!-- Streaming components -->
+  <rect x="500" y="450" width="100" height="60" rx="5" fill="#fff" stroke="#1976d2" stroke-width="1" />
+  <text x="550" y="485" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">LLM Agent</text>
+  
+  <rect x="700" y="450" width="100" height="60" rx="5" fill="#fff" stroke="#1976d2" stroke-width="1" />
+  <text x="750" y="485" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Tool Service</text>
+  
+  <!-- Streaming arrows -->
+  <path d="M600 460 C630 445, 670 445, 700 460" stroke="#1976d2" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="650" y="440" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">Real-time requests</text>
+  
+  <path d="M700 500 C670 515, 630 515, 600 500" stroke="#1976d2" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="650" y="530" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">Streaming responses</text>
+  
+  <text x="650" y="575" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Full-duplex WebSocket communication</text>
+  <text x="650" y="595" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Partial results & incremental updates</text>
+  <text x="650" y="615" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Lower latency for complex operations</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+</svg>

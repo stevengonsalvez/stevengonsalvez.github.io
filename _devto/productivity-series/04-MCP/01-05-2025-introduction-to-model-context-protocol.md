@@ -1,6 +1,6 @@
 ---
 title: 'Introduction to Model Context Protocol (MCP): The USB-C of AI Integrations'
-published: false
+published: true
 description: 'Discover how Model Context Protocol is revolutionizing AI integrations by standardizing how AI models connect with tools and data sources, making complex workflows simpler and more powerful.'
 tags: 'ai, modelcontextprotocol, mcp, standards'
 series: Model Context Protocol (MCP) Series
