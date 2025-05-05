@@ -1,0 +1,129 @@
+<svg viewBox="0 0 800 750" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="750" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333">Model Context Protocol (MCP) Process Flow</text>
+  
+  <!-- Components -->
+  <!-- User -->
+  <circle cx="100" cy="120" r="40" fill="#e6f7ff" stroke="#1890ff" stroke-width="2" />
+  <text x="100" y="125" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">User</text>
+  
+  <!-- Host Application -->
+  <rect x="220" y="80" width="180" height="80" rx="10" fill="#fff1f0" stroke="#ff4d4f" stroke-width="2" />
+  <text x="310" y="115" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Host Application</text>
+  <text x="310" y="135" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">(Claude Desktop, IDE, etc.)</text>
+  
+  <!-- LLM -->
+  <rect x="520" y="80" width="180" height="80" rx="10" fill="#e6f7ff" stroke="#1890ff" stroke-width="2" />
+  <text x="610" y="115" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">LLM</text>
+  <text x="610" y="135" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">(Claude, GPT, etc.)</text>
+  
+  <!-- MCP Client with integrated Tool Registry -->
+  <rect x="220" y="220" width="180" height="120" rx="10" fill="#f6ffed" stroke="#52c41a" stroke-width="2" />
+  <text x="310" y="245" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">MCP Client</text>
+  <text x="310" y="265" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">Manages connections to servers</text>
+  
+  <!-- Tool Registry (inside MCP Client) -->
+  <rect x="235" y="280" width="150" height="50" rx="5" fill="#fff2e8" stroke="#fa8c16" stroke-width="1.5" />
+  <text x="310" y="305" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#333">Tool Registry</text>
+  <text x="310" y="320" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">Local or server-provided schemas</text>
+  
+  <!-- MCP Servers Group -->
+  <rect x="120" y="390" width="560" height="180" rx="10" fill="#f9f0ff" stroke="#722ed1" stroke-width="2" stroke-dasharray="5,5" />
+  <text x="400" y="415" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#722ed1">MCP Servers</text>
+  
+  <!-- Individual MCP Servers -->
+  <rect x="150" y="435" width="160" height="55" rx="8" fill="#ffffff" stroke="#722ed1" stroke-width="2" />
+  <text x="230" y="465" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#333">Google Drive Server</text>
+  <text x="230" y="480" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">File Access Tools</text>
+  
+  <rect x="350" y="435" width="160" height="55" rx="8" fill="#ffffff" stroke="#722ed1" stroke-width="2" />
+  <text x="430" y="465" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#333">Slack Server</text>
+  <text x="430" y="480" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">Message Tools</text>
+  
+  <rect x="150" y="500" width="160" height="55" rx="8" fill="#ffffff" stroke="#722ed1" stroke-width="2" />
+  <text x="230" y="530" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#333">GitHub Server</text>
+  <text x="230" y="545" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">Repository Tools</text>
+  
+  <rect x="350" y="500" width="160" height="55" rx="8" fill="#ffffff" stroke="#722ed1" stroke-width="2" />
+  <text x="430" y="530" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#333">Custom Tool Server</text>
+  <text x="430" y="545" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">Domain-specific Tools</text>
+  
+  <!-- External Systems -->
+  <rect x="580" y="390" width="150" height="180" rx="10" fill="#f0f5ff" stroke="#2f54eb" stroke-width="2" />
+  <text x="655" y="415" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#2f54eb">External Systems</text>
+  <text x="655" y="450" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">APIs</text>
+  <text x="655" y="480" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">Databases</text>
+  <text x="655" y="510" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">Services</text>
+  <text x="655" y="540" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">File Systems</text>
+  
+  <!-- Function Calling Component -->
+  <rect x="250" y="620" width="300" height="120" rx="10" fill="#fffbe6" stroke="#faad14" stroke-width="2" />
+  <text x="400" y="640" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Function Calling</text>
+  <text x="400" y="660" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">(OpenAI-style or JSON schema metadata)</text>
+  
+  <rect x="270" y="670" width="260" height="60" rx="5" fill="#ffffff" stroke="#faad14" stroke-width="1" />
+  <text x="400" y="685" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#333">JSON Schema Definition</text>
+  <text x="400" y="700" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">name: "search_files"</text>
+  <text x="400" y="715" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">parameters: { query, path, ... }</text>
+  <text x="400" y="730" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">description: "Search for files"</text>
+  
+  <!-- Arrows and Flow -->
+  <!-- User to Host App -->
+  <line x1="140" y1="120" x2="220" y2="120" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="180" y="110" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">Query/Task</text>
+  
+  <!-- Host App to LLM -->
+  <line x1="400" y1="120" x2="520" y2="120" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="460" y="110" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">Natural language query</text>
+  
+  <!-- Host App to MCP Client -->
+  <line x1="310" y1="160" x2="310" y2="220" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="320" y="195" text-anchor="start" font-family="Arial" font-size="10" fill="#666">1. Initialization</text>
+  
+  <!-- LLM to MCP Client (call_tool) -->
+  <path d="M520 150 C450 150, 450 260, 400 260" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,5" />
+  <text x="425" y="175" text-anchor="start" font-family="Arial" font-size="10" fill="#666">3. call_tool("search_files", params)</text>
+  <text x="425" y="190" text-anchor="start" font-family="Arial" font-size="10" fill="#666">(Core function call event)</text>
+  
+  <!-- MCP Client to MCP Servers - Bidirectional -->
+  <line x1="310" y1="340" x2="310" y2="390" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="325" y="370" text-anchor="start" font-family="Arial" font-size="10" fill="#666">Execute tool</text>
+  
+  <line x1="290" y1="390" x2="290" y2="340" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="3,3" />
+  <text x="240" y="370" text-anchor="end" font-family="Arial" font-size="10" fill="#666">Return result</text>
+  
+  <!-- LLM to Tool Registry -->
+  <line x1="520" y1="130" x2="310" y2="280" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="3,3" />
+  <text x="400" y="220" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">2. Checks available tools</text>
+  
+  <!-- MCP Servers to External Systems -->
+  <line x1="510" y1="465" x2="580" y2="465" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="545" y="455" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">Access data</text>
+  
+  <!-- MCP Servers to Function Calling -->
+  <line x1="400" y1="570" x2="400" y2="620" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="410" y="600" text-anchor="start" font-family="Arial" font-size="10" fill="#666">Standardizes</text>
+  <text x="410" y="612" text-anchor="start" font-family="Arial" font-size="10" fill="#666">tool interface</text>
+  
+  <!-- Function Calling to MCP Client (Result) -->
+  <path d="M250 680 C180 680, 180 280, 220 280" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="3,3" />
+  <text x="180" y="350" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">Structured response</text>
+  
+  <!-- MCP Client to Host App (Result) -->
+  <path d="M220 240 C180 240, 180 140, 220 140" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="180" y="190" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">Return response</text>
+  
+  <!-- Host App to User (Result) -->
+  <path d="M220 100 C160 100, 160 80, 100 80 C40 80, 40 120, 100 120" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="70" y="70" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">Final response</text>
+
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+</svg>
