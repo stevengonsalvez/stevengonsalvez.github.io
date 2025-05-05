@@ -1,6 +1,6 @@
 ---
 title: 'Exploring the MCP Ecosystem: Looking Under the Hood'
-published: false
+published: true
 description: 'A deep dive into the mechanics of Model Context Protocol, how it enables bidirectional communication, and what is next for this revolutionary standard'
 tags: 'ai, modelcontextprotocol, mcp, security'
 series: Model Context Protocol (MCP) Series
@@ -75,7 +75,7 @@ MCP takes this foundation and builds a standardized protocol on top of it, creat
 
 Let's visualize how MCP actually works. The diagram below shows the overall process flow when an LLM uses MCP to interact with external tools:
 
-![Model Context Protocol (MCP) Process Flow](./assets/mcp-process-flowchart-corrected.svg)
+![Model Context Protocol (MCP) Process Flow](./assets/mcp-process-flowchart-corrected.png)
 
 _P.S. This rather neat SVG was conjured up by Claude. Way better than wrestling with Mermaid, wouldn't you agree? 😉_
 
