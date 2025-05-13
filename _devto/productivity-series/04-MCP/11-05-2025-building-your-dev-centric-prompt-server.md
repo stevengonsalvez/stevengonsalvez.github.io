@@ -359,7 +359,10 @@ Once connected:
 4.  **Management:** Use MCP Inspector or stdio for tools like `add_prompt` if Claude doesn't directly support arbitrary `tools/call`.
 
 
-![claude full usage of prompt registry](./assets/output.gif)
+<video controls loop muted playsinline width="100%">
+  <source src="https://www.dropbox.com/scl/fi/rdctl6xynxghm3m2jdr3y/output_smaller.mp4?raw=1" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
 
 
 ## 🛠️ Available Management Tools
