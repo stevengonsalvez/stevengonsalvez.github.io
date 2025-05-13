@@ -82,11 +82,22 @@ Think of this post as your series dashboard—a living index that I'll update as
 - [ ] **Part 7:** Advance and Super power your workflows with Obsidian
 
 ### Series 3: AI-Augmented Development
-- [ ] **Part 1:** [Finding the Best AI Coding Assistant: From Pure Vibe to Practical Power](https://dev.to/stevengonsalvez/finding-the-best-ai-coding-assistant-from-pure-vibe-to-practical-power-bl8)
-- [ ] **Part 2:** [Beyond the Hype: What Truly Makes an AI a Great Coding Partner?](https://dev.to/stevengonsalvez/beyond-the-hype-what-truly-makes-an-ai-a-great-coding-partner-2i7c)
+- [x] **Part 1:** [Finding the Best AI Coding Assistant: From Pure Vibe to Practical Power](https://dev.to/stevengonsalvez/finding-the-best-ai-coding-assistant-from-pure-vibe-to-practical-power-bl8)
+- [x] **Part 2:** [Beyond the Hype: What Truly Makes an AI a Great Coding Partner?](https://dev.to/stevengonsalvez/beyond-the-hype-what-truly-makes-an-ai-a-great-coding-partner-2i7c)
 - [ ] **Part 3:** Performance and Value of AI coding Agents: IDE and Terminal (aider, claude code, openai codex, cursor, cline, windsurf, trae)
 - [ ] **Part 4:** Guide to better precision with your AI coding Tools : Prompts, context, rules (cursor, claude desktop, cline, aider etc)
 - [ ] **Part 5:** Enhancing agentic coding with MCP: building your own Personal AI Infrastructure
+
+### Series 4: Model Context Protocol 
+
+- [x] **Part 1:** [Introduction to Model Context Protocol (MCP): The USB‑C of AI Integrations](https://dev.to/stevengonsalvez/introduction-to-model-context-protocol-mcp-the-usb-c-of-ai-integrations-2h76)
+- [x] **Part 2:** [Exploring the MCP Ecosystem: Looking Under the Hood](https://dev.to/stevengonsalvez/exploring-the-mcp-ecosystem-looking-under-the-hood-10bj)
+- [x] **Part 3:** [Stop Losing Prompts: Build Your Own MCP Prompt Registry](https://dev.to/stevengonsalvez/stop-losing-prompts-build-your-own-mcp-prompt-registry-4fi1)
+- [ ] **Part 4:** Ethical Hacking in MCP — The gaping holes,  vulnerabilities & Staying Safe (coming soon)
+
+
+_(Yep, another rabbit hole so of course the dashboard keeps expanding. 🕳️🐇)_
+
 
 
 ## Who Am I?
