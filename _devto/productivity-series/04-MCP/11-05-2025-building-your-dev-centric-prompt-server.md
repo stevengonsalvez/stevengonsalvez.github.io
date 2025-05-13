@@ -146,9 +146,8 @@ This is standard setup. The `listChanged: true` for prompts is important for dyn
 ---
 | 📚 **Geek Corner** |
 |:-------------------|
-| **The Stdio Contract & `console.error`**:  
-When your MCP server uses `StdioServerTransport`, `stdout` becomes a dedicated channel for JSON-RPC messages to the client. Any `console.log()` calls on the server will spew text into this channel, making the client think it's receiving garbled MCP messages. It's like trying to have a serious phone call while someone's shouting random words into your ear.  
-**The Fix:** All your server-side diagnostic logs, status messages ("Server started!"), and ASCII art must go to `stderr`. Use `console.error("My debug message")`. This keeps `stdout` pristine for the protocol. For logs you want the *client* to potentially see and handle, use MCP's logging capability (e.g., `context.sendNotification` with a `notifications/message`). |
+| **The Stdio Contract & `console.error`**:  When your MCP server uses `StdioServerTransport`, `stdout` becomes a dedicated channel for JSON-RPC messages to the client. Any `console.log()` calls on the server will spew text into this channel, making the client think it's receiving garbled MCP messages. It's like trying to have a serious phone call while someone's shouting random words into your ear.  |
+|**The Fix:** All your server-side diagnostic logs, status messages ("Server started!"), and ASCII art must go to `stderr`. Use `console.error("My debug message")`. This keeps `stdout` pristine for the protocol. For logs you want the *client* to potentially see and handle, use MCP's logging capability (e.g., `context.sendNotification` with a `notifications/message`). |
 ---
 
 **2. Layered Prompt Loading & Registration (`loadAndRegisterPrompts`):**
@@ -202,12 +201,13 @@ These MCP `tools` manage the prompt files and their MCP registration:
 | 📚 **Geek Corner** |
 |:-------------------|
 | **Schema Validation with Zod: Your Data's Bodyguard**  
-We're using `zod` to define schemas for our tool arguments. This isn't just for show!  
-*   **Ironclad Validation:** Zod acts like a strict bouncer. If a client sends arguments that don't match the schema (e.g., a number where a string is expected for a prompt variable), Zod throws a fit *before* your core logic even sees the bad data. `McpServer` catches this and sends a proper MCP error back.  
-*   **TypeScript Harmony:** Zod schemas give you inferred TypeScript types (`z.infer<typeof mySchema>`). This means fewer `any`s and more confidence that your code matches your data structure.  
-*   **Documentation by Design:** The schemas themselves act as clear documentation for what your tools expect. `McpServer` even uses them to generate the `inputSchema` in `tools/list` responses and to derive the `arguments` field for `prompts/list`.  
-It’s a prime example of the "Parse, Don't Validate" philosophy. You define the shape of valid data, and Zod ensures that's what you get. |
+We're using `zod` to define schemas for our tool arguments. This isn't just for show!  |
+|*   **Ironclad Validation:** Zod acts like a strict bouncer. If a client sends arguments that don't match the schema (e.g., a number where a string is expected for a prompt variable), Zod throws a fit *before* your core logic even sees the bad data. `McpServer` catches this and sends a proper MCP error back.  |
+|*   **TypeScript Harmony:** Zod schemas give you inferred TypeScript types (`z.infer<typeof mySchema>`). This means fewer `any`s and more confidence that your code matches your data structure.  |
+|*   **Documentation by Design:** The schemas themselves act as clear documentation for what your tools expect. `McpServer` even uses them to generate the `inputSchema` in `tools/list` responses and to derive the `arguments` field for `prompts/list`.  |
+|It’s a prime example of the "Parse, Don't Validate" philosophy. You define the shape of valid data, and Zod ensures that's what you get. |
 ---
+
 | 📚 **Geek Corner** |
 |:-------------------|
 | **Prompt Argument Defaults: MCP vs. Server-Side Templating**  
@@ -217,19 +217,19 @@ The short answer, for now, is **not directly in the standard MCP `PromptArgument
 **So, how do we handle defaults? It's a two-part harmony:**
 
 1.  **Client-Side (MCP Standard):** In your prompt's JSON file (e.g., `rules-processor.json`), when you define a variable under the `variables` key:
-    \`\`\`json
+    ```json
     "user_goal": {
       "description": "Optional user goal (e.g., 'general analysis'). Defaults to 'Perform a general rule-based analysis.' if omitted.",
       "required": false 
     }
-    \`\`\`
+    ```
     Setting `required: false` tells MCP clients that this argument is optional. The `description` is your chance to hint at the default behavior or a common default value.
 
 2.  **Server-Side (Your Implementation):** In your prompt's `content` template string, you handle the actual default application:
-    \`\`\`handlebars
+    ```handlebars
     {{! Your prompt template might look like this }}
     User Goal (Optional): {{user_goal | default: 'Perform a general rule-based analysis.'}}
-    \`\`\`
+    ```
     When your server's `promptCallback` (for `prompts/get`) processes the arguments sent by the client, if `user_goal` wasn't provided, your `applyTemplate` function will substitute the fallback.
 
 **The Takeaway:** Use `required: false` and clear `description`s in your prompt variable definitions for MCP clients. Implement the actual default value logic within your server-side prompt content templating. 
@@ -272,28 +272,28 @@ Testing `stdio`-based MCP servers requires a bit of frontier spirit.
 1.  **Manual `stdio` with JSON-RPC:**
     Pipe JSON-RPC requests into `stdin`.
     *Add a project-specific prompt:*
-    \`\`\`json
+    ```json
     {"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"add_prompt","arguments":{"id":"git-commit","description":"Generate a Git commit message","content":"Generate a concise Git commit message for these changes: {{changes}}","tags":["git","commit"],"variables":{"changes":{"description":"Git diff or code changes","required":true}}}}}
-    \`\`\`
+    ```
     *List all active prompts (standard MCP):*
-    \`\`\`json
+    ```json
     {"jsonrpc":"2.0","id":2,"method":"prompts/list"}
-    \`\`\`
+    ```
     *Get and apply a prompt (standard MCP):*
-    \`\`\`json
+    ```json
     {"jsonrpc":"2.0","id":3,"method":"prompts/get","params":{"name":"git-commit","arguments":{"changes":"-feat: Added new login button\\n-fix: Solved the off-by-one error"}}}
-    \`\`\`
+    ```
 
 2.  **MCP Inspector:**
     The [MCP Inspector](https://github.com/modelcontextprotocol/inspector) GUI tool.
     *Connect to local compiled server:*
-    \`\`\`bash
+    ```bash
     mcp-inspector --stdio "node /path/to/your/mcp-prompt-squire/dist/server.js"
-    \`\`\`
+    ```
     *Connect to Docker container:*
-    \`\`\`bash
+    ```bash
     mcp-inspector --stdio "docker run -i --rm mcp-prompt-squire"
-    \`\`\`
+    ```
 
 3. **Postman MCP client**
 
