@@ -9,7 +9,7 @@ canonical_url: null
 id: 2484178
 ---
 
-# Building Your Dev-Centric Prompt Server with MCP 🏰✍️ (Now with Layers!)
+# Building Your Dev-Centric Prompt Server with MCP 🏰✍️
 
 
 Ever spend half your morning hunting for that one magic prompt, the little line of text that turns gnarly legacy code into poetry or squashes an epic PR down? One minute it’s in front of you, the next it’s gone. Maybe it’s hiding in `notes_final_v3.md`, lost in a Slack thread, or buried in a comment from a project you barely remember. Tracking down lost prompts can feel less like coding and more like finding a lego brick in my daughter's playroom. 
