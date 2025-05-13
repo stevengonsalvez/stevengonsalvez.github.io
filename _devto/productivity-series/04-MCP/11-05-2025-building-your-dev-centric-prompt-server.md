@@ -1,12 +1,12 @@
 ---
 title: 'Stop Losing Prompts: Build Your Own MCP Prompt Registry'
-published: false # Set to false until you're ready to publish
-description: "Tired of scattered prompts? Learn to build your own personal, layered prompt management server using the Model Context Protocol (MCP) and stdio. Perfect for local dev and custom AI workflows."
+published: false
+description: 'Tired of scattered prompts? Learn to build your own personal, layered prompt management server using the Model Context Protocol (MCP) and stdio. Perfect for local dev and custom AI workflows.'
 tags: 'ai, mcp, modelcontextprotocol, devtools'
-# series: Model Context Protocol (MCP) Deep Dive # Optional: If you plan a series
-cover_image: 'https://images.unsplash.com/photo-1517423568366-8b83523034fd?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' 
+cover_image: 'https://images.unsplash.com/photo-1517423568366-8b83523034fd?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 series: Model Context Protocol (MCP) Series
 canonical_url: null
+id: 2484178
 ---
 
 # Building Your Dev-Centric Prompt Server with MCP 🏰✍️ (Now with Layers!)
