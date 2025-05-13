@@ -7,6 +7,7 @@ cover_image: 'https://images.unsplash.com/photo-1517423568366-8b83523034fd?q=80&
 series: Model Context Protocol (MCP) Series
 canonical_url: null
 id: 2484178
+date: '2025-05-13T16:14:07Z'
 ---
 
 # Building Your Dev-Centric Prompt Server with MCP 🏰✍️
