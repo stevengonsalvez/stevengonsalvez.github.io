@@ -34,26 +34,26 @@ MCP is an open standard created by Anthropic (the folks behind Claude) that stan
 |:-------------------|
 | **The M×N vs M+N Problem**:  
 Before MCP (and wrappers like langchain), connecting M different AI models with N different tools required M×N unique integrations.  
-With MCP (and good agent frameworks), you just need M clients and N servers—a total of M+N components.  
+With MCP (and good agent frameworks), you just need M clients and N servers-a total of M+N components.  
 This is reminiscent of the famous **Metcalfe's Law** in networks, which states that the value of a network grows proportionally to the square of the number of users.  
-Similarly, the *pain* of maintaining AI integrations grew at a quadratic rate—until MCP arrived to linearize it. |
+Similarly, the *pain* of maintaining AI integrations grew at a quadratic rate-until MCP arrived to linearize it. |
 
 
 So why not just use REST APIs or gRPC directly?
 
-Well, MCP actually borrows the best from both worlds. It keeps the descriptive, JSON-based simplicity of REST that plays nicely with LLMs, while also taking inspiration from gRPC’s “reflection” abilities — letting clients discover what tools are available without hardcoding the schema. The difference is that gRPC was designed to be compact and efficient for machine-to-machine comms — great for backend services, but not ideal for AI agents, which need more context, metadata, and flexibility for function calling. You’d have to bolt on extra layers to make gRPC work well for an LLM. MCP gives you that out of the box.
+Well, MCP actually borrows the best from both worlds. It keeps the descriptive, JSON-based simplicity of REST that plays nicely with LLMs, while also taking inspiration from gRPC’s “reflection” abilities - letting clients discover what tools are available without hardcoding the schema. The difference is that gRPC was designed to be compact and efficient for machine-to-machine comms - great for backend services, but not ideal for AI agents, which need more context, metadata, and flexibility for function calling. You’d have to bolt on extra layers to make gRPC work well for an LLM. MCP gives you that out of the box.
 
 ## How MCP Actually Works: Simple Yet Powerful
 
 At its core, MCP follows a client-server architecture that's deceptively simple:
 
-1. **MCP Hosts**: These are the programs where the action happens—like Claude Desktop, your IDE (vscode/cursor/trae), or a custom AI application built to use tools with MCP
+1. **MCP Hosts**: These are the programs where the action happens-like Claude Desktop, your IDE (vscode/cursor/trae), or a custom AI application built to use tools with MCP
 
 2. **MCP Clients**: These maintain the connections with servers, handling all the protocol details.
 
 3. **MCP Servers**: These lightweight programs expose specific capabilities (like accessing your GitHub repos or jira or reading your Slack messages) through the standardized MCP interface.
 
-4. **Data Sources**: These are what the servers connect to—your local files, databases, or remote services.
+4. **Data Sources**: These are what the servers connect to-your local files, databases, or remote services.
 
 The beauty is in the standardization. Each MCP server exposes three main types of functionality:
 
@@ -63,7 +63,7 @@ The beauty is in the standardization. Each MCP server exposes three main types o
 
 
 
-And here's where the magic happens: once you have an MCP server for GitHub and another for Slack, *any* MCP client can talk to them. Switch from Langchain to autogen or switch from Claude to gpt-4 ? No problem. The servers don't care—they speak MCP, not model-specific languages.
+And here's where the magic happens: once you have an MCP server for GitHub and another for Slack, *any* MCP client can talk to them. Switch from Langchain to autogen or switch from Claude to gpt-4 ? No problem. The servers don't care-they speak MCP, not model-specific languages.
 
 ## The "Before MCP" Landscape: Framework Fragmentation
 
@@ -80,14 +80,14 @@ Each of these solutions worked within their own ecosystem, but they didn't talk 
 | **The Integration Tower of Babel**:  
 The pre-MCP fragmentation mirrors the classic challenges described in the **CAP theorem** from distributed systems.  
 Each framework optimized for different properties (Consistency, Availability, or Partition tolerance) in their integration approaches.  
-LangChain leaned into flexibility, AutoGen chased multi-agent setups, and CrewAI tried to build better human-AI teamwork. Each had its own vibe — and its own quirks 
+LangChain leaned into flexibility, AutoGen chased multi-agent setups, and CrewAI tried to build better human-AI teamwork. Each had its own vibe - and its own quirks 
 Like programming languages that optimize for different use cases, no single framework could solve all integration patterns well.  
-MCP doesn't eliminate these tradeoffs, but it provides a common protocol for expressing them—similar to how HTTP became the standard protocol despite web frameworks having different philosophies. |
+MCP doesn't eliminate these tradeoffs, but it provides a common protocol for expressing them-similar to how HTTP became the standard protocol despite web frameworks having different philosophies. |
 
 
 ## Getting Started with MCP: Baby Steps
 
-If you're thinking, "This sounds great, but where do I even begin?"—don't worry. The MCP ecosystem is growing rapidly, with pre-built servers for popular services like:
+If you're thinking, "This sounds great, but where do I even begin?"-don't worry. The MCP ecosystem is growing rapidly, with pre-built servers for popular services like:
 
 - GitHub
 - Slack
@@ -110,7 +110,7 @@ The coolest part? MCP is already being adopted by major players, not just Anthro
 - Development tools like zed, cline, roocode, replit, cursor, copilot , amazon q and even vscode have support for MCP which has 
 - Every SaaS product is on the bandwagon offering an MCP server on top of their API. 
 
-MCP isn’t some trendy spec destined to collect dust — it’s rapidly becoming the glue for modern AI workflows, and the ecosystem is expanding fast.
+MCP isn’t some trendy spec destined to collect dust - it’s rapidly becoming the glue for modern AI workflows, and the ecosystem is expanding fast.
 
 | 📚 **Geek Corner** |
 |:-------------------|
@@ -119,11 +119,11 @@ MCP's rapid adoption follows patterns similar to successful standards like HTTP,
 According to **Shapiro and Varian's economic theory of standards adoption**, successful standards combine early value with increasing returns to adoption.  
 MCP provides immediate value through pre-built servers, while gaining momentum through network effects as more tools become MCP-compatible.  
 The backing by major companies like Anthropic, Amazon, Microsoft, and [the promise of Google and Openai to adopt the standard](https://techcrunch.com/2025/04/09/google-says-itll-embrace-anthropics-standard-for-connecting-ai-models-to-data/) provides the legitimacy needed for a standard to reach critical mass.  
-What's truly clever is that MCP is an open standard—following the playbook that made the web successful rather than trying to create a walled garden. |
+What's truly clever is that MCP is an open standard-following the playbook that made the web successful rather than trying to create a walled garden. |
 
 ## The Beginning of a New Era
 
-We're standing at the beginning of a new era in AI integration. MCP is doing for AI what standardized containers did for shipping—creating a common interface that allows diverse systems to work together efficiently.
+We're standing at the beginning of a new era in AI integration. MCP is doing for AI what standardized containers did for shipping-creating a common interface that allows diverse systems to work together efficiently.
 
 In the next post in this series, we'll dive deeper into the "why" of MCP, exploring specific use cases where it shines. We'll also look at how it compares to traditional API approaches and when you might choose one over the other.
 

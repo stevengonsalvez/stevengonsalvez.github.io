@@ -168,7 +168,7 @@ However, this approach has limitations – notably, it only works on the same ma
 
 ### SSE Transport: The Remote Connector
 
-Server-Sent Events (SSE) is the second transport mechanism MCP supports, enabling remote communication over HTTP. This is where things often trip people up with MCP — and for good reason, so let's break it down in detail.
+Server-Sent Events (SSE) is the second transport mechanism MCP supports, enabling remote communication over HTTP. This is where things often trip people up with MCP - and for good reason, so let's break it down in detail.
 
 #### How SSE Actually Works in MCP
 
@@ -300,7 +300,7 @@ The transport protocol choice always involves tradeoffs. MCP's support for both 
 
 ### OAuth 2.1 Authorization: Securing the AI-Tool Interface
 
-Up until now, MCP communication has focused primarily on transport and protocol standardization — but there was one glaring gap: **authorization**.
+Up until now, MCP communication has focused primarily on transport and protocol standardization - but there was one glaring gap: **authorization**.
 
 Previous MCP setups either relied on:
 - Implicit trust between agents and servers (local deployments)
@@ -320,14 +320,14 @@ With the [2025-03-26 MCP spec](https://modelcontextprotocol.io/specification/202
 - Clients can authenticate, request access tokens, and call tools based on fine-grained scopes
 - Tool servers can validate tokens (JWTs or introspection), and even delegate to third-party auth providers
 
-This allows MCP to move from local toy setups to serious, secure multi-agent environments — where tools can declare their required permissions, clients can ask for just what they need, and the whole exchange is governed by proper access control.
+This allows MCP to move from local toy setups to serious, secure multi-agent environments - where tools can declare their required permissions, clients can ask for just what they need, and the whole exchange is governed by proper access control.
 
 | 📚 **Geek Corner: OAuth, but Make It Agentic** |
 |:---------------------------------------------|
 | You might be wondering: "Wait, isn't OAuth just for login buttons?"  
-Not quite. OAuth is a delegation framework — it's how your AI agent can say:  
-_"Hey, I want to access this weather API — but only to read temperature, not to change server settings."_  
-With proper scopes, token validation, and consent flows, we're finally moving past the era of hardcoded `service_key=XYZ123` in plain-text files. MCP doesn't reinvent security — it just finally plugs into the system the web already trusts. |
+Not quite. OAuth is a delegation framework - it's how your AI agent can say:  
+_"Hey, I want to access this weather API - but only to read temperature, not to change server settings."_  
+With proper scopes, token validation, and consent flows, we're finally moving past the era of hardcoded `service_key=XYZ123` in plain-text files. MCP doesn't reinvent security - it just finally plugs into the system the web already trusts. |
 
 
 ### Streamable HTTP: Simplifying Bi-Directional Transport
@@ -336,19 +336,19 @@ Until recently, remote MCP communication required using two endpoints:
 - One for establishing a persistent SSE connection (`/sse`) so the server could push updates back to the client
 - Another for sending tool call requests (`/sse/messages`)
 
-While functional, this setup was awkward — like holding two phones at once: one to talk, one to listen. It introduced complexity, required clients to maintain long-lived connections, and increased the risk of missed messages during network hiccups.
+While functional, this setup was awkward - like holding two phones at once: one to talk, one to listen. It introduced complexity, required clients to maintain long-lived connections, and increased the risk of missed messages during network hiccups.
 
 **Enter Streamable HTTP.**
 
 This new transport simplifies everything by enabling:
 
 - **Single endpoint communication**: All interaction now flows through a single `/mcp` endpoint, greatly reducing overhead.
-- **Bi-directional exchange**: Servers can respond and push updates on the same connection, enabling richer interactions — like prompting the client for more input or streaming back partial results.
-- **Dynamic upgrades**: A tool call begins as a regular POST, but the connection can seamlessly upgrade to an SSE stream if needed — for example, to support long-running operations.
+- **Bi-directional exchange**: Servers can respond and push updates on the same connection, enabling richer interactions - like prompting the client for more input or streaming back partial results.
+- **Dynamic upgrades**: A tool call begins as a regular POST, but the connection can seamlessly upgrade to an SSE stream if needed - for example, to support long-running operations.
 
 With Streamable HTTP, if an AI agent invokes a tool, it sends a single request to `/mcp`. The server can respond immediately or, if the task is lengthy, upgrade the connection to stream responses in real time.
 
-While current implementations match SSE's feature set, the spec allows for more: resumability, cancellability, and session tracking — all of which are on the roadmap.
+While current implementations match SSE's feature set, the spec allows for more: resumability, cancellability, and session tracking - all of which are on the roadmap.
 
 Check out the [official MCP specification for Streamable HTTP](https://modelcontextprotocol.io/specification/2025-03-26/basic/transports#streamable-http) for the latest developments.
 
@@ -357,7 +357,7 @@ The Model Context Protocol is still evolving, and there are several exciting dev
 
 ### Agent Graph Architecture
 
-One of the more interesting directions emerging in the MCP community is the idea of "agent graphs" — proposed architectures where a proxy or aggregator node can sit on top of multiple MCP servers, creating a hierarchical mesh of tools and services.
+One of the more interesting directions emerging in the MCP community is the idea of "agent graphs" - proposed architectures where a proxy or aggregator node can sit on top of multiple MCP servers, creating a hierarchical mesh of tools and services.
 
 This came up in a [recent GitHub discussion](https://github.com/modelcontextprotocol/modelcontextprotocol/discussions/94), where the community debated how to manage scenarios in which:
 - A single MCP client needs to interact with many tool servers
@@ -372,13 +372,13 @@ A few patterns were proposed:
 - **Hierarchical namespacing**: Using naming conventions like `@agent-name/tool-name` to avoid collisions between tools from different servers.
 - **Discovery-layer solutions**: Instead of baking the graph into MCP's core, allow clients to resolve tool routes dynamically at runtime.
 
-There's clear utility here — especially in enterprise settings where you might have thousands of downstream tool endpoints. But it also raises open questions: Who manages the registry? How do you version tools? Can a tool call be dynamically routed across multiple backends?
+There's clear utility here - especially in enterprise settings where you might have thousands of downstream tool endpoints. But it also raises open questions: Who manages the registry? How do you version tools? Can a tool call be dynamically routed across multiple backends?
 
 | 📚 **Geek Corner: Graphs of Agents, Not Just Tools** |
 |:---------------------------------------------------|
-| Think of this like microservices — but for AI tools.  
+| Think of this like microservices - but for AI tools.  
 Instead of hardcoding every tool in every agent, you could have a shared MCP proxy layer that routes requests smartly based on context, scopes, or even performance.  
-This would allow teams to build modular, swappable agents with their own toolchains — while clients only need to point at a single MCP proxy. That's the dream. |
+This would allow teams to build modular, swappable agents with their own toolchains - while clients only need to point at a single MCP proxy. That's the dream. |
 
 >There exists already few implementations like [mcp bridge](https://github.com/SecretiveShell/MCP-Bridge/tree/master?tab=readme-ov-file#sse-bridge) or [mcp hub](https://github.com/ravitemer/mcp-hub) , but they are more janky sticky plaster - opens out other problems like human in the loop, approval, state management etc. 
 
@@ -409,7 +409,7 @@ As Holt puts it: "Agents don't pass context around; they live inside it." This v
 
 ## Gaps from the Ground: What's Missing for Enterprise-Grade MCP?
 
-As exciting as MCP is — and as much progress has been made — we need to talk about what's not there yet. From where I stand, the protocol still feels more startup-native than enterprise-ready. The cowboy spirit of "just wire it up and ship it" works great in lean, fast-moving teams — but for large organizations with security, compliance, and audit requirements, MCP has a long way to go.
+As exciting as MCP is - and as much progress has been made - we need to talk about what's not there yet. From where I stand, the protocol still feels more startup-native than enterprise-ready. The cowboy spirit of "just wire it up and ship it" works great in lean, fast-moving teams - but for large organizations with security, compliance, and audit requirements, MCP has a long way to go.
 
 Here are some of the biggest gaps I see that could block full-scale adoption:
 
@@ -419,13 +419,13 @@ Right now, there's no standardized way to control which tools get registered, wh
 
 ### 2. Security (Token Theft, Tool Poisoning, Prompt Injection…)
 
-MCP creates powerful access patterns — but also dangerous ones. You're essentially plugging AI agents into remote-executable interfaces with live tokens and external access. The attack surface is wide:
+MCP creates powerful access patterns - but also dangerous ones. You're essentially plugging AI agents into remote-executable interfaces with live tokens and external access. The attack surface is wide:
 - Prompt injection via tool names or parameter crafting
 - Tool poisoning (malicious tools returning compromised outputs)
 - Exfiltration via overly-permissive tool scopes
 - Token theft from compromised servers or clients
 
-Right now, there's a real lack of standard practices around mitigating these risks — especially things like fine-grained permission enforcement, sandboxed tool execution, or secure output validation.
+Right now, there's a real lack of standard practices around mitigating these risks - especially things like fine-grained permission enforcement, sandboxed tool execution, or secure output validation.
 
 ### 3. Observability and Monitoring Are Primitive
 
@@ -446,7 +446,7 @@ The MCP ecosystem is promising but still fragmented. Many popular apps don't hav
 
 ### 6. Authentication and Access Control Are Still Ad-Hoc
 
-The 2025 spec introduces OAuth 2.1 — and that's a big step. But adoption is still inconsistent. And even with OAuth, most setups lack things enterprises are used to:
+The 2025 spec introduces OAuth 2.1 - and that's a big step. But adoption is still inconsistent. And even with OAuth, most setups lack things enterprises are used to:
 - SCAMP-like container policies
 - Namespace-level controls
 - Delegated scopes and granular claims
@@ -461,11 +461,11 @@ Enterprises need zero-trust environments, especially when agents execute externa
 - Tool responses can be spoofed or poisoned
 - Agents have no ability to introspect whether a tool was trusted or sandboxed
 
-We need better runtime enforcement here — maybe something akin to CSPs in web apps or AppArmor for tools.
+We need better runtime enforcement here - maybe something akin to CSPs in web apps or AppArmor for tools.
 
 ### 8. Debugging Is... Painful
 
-If something breaks in a multi-agent + multi-tool flow, good luck. You'll likely find yourself tailing logs, watching sockets, and hoping for the best. Structured debugging support — like stack traces for agents or session snapshots — just doesn't exist yet.
+If something breaks in a multi-agent + multi-tool flow, good luck. You'll likely find yourself tailing logs, watching sockets, and hoping for the best. Structured debugging support - like stack traces for agents or session snapshots - just doesn't exist yet.
 
 ### 9. Data Privacy and Policy Gaps
 
@@ -473,7 +473,7 @@ Most enterprise teams have strict DLP (data loss prevention) rules. MCP makes th
 
 ### 10. Cowboy Energy Everywhere
 
-This one's more cultural than technical — but it matters. Right now, MCP is moving fast, evolving quickly, and driven by highly capable indie contributors and startups. That's amazing — but it also means few systems are hardened, few patterns are agreed upon, and very few setups are reproducible out of the box.
+This one's more cultural than technical - but it matters. Right now, MCP is moving fast, evolving quickly, and driven by highly capable indie contributors and startups. That's amazing - but it also means few systems are hardened, few patterns are agreed upon, and very few setups are reproducible out of the box.
 
 
 | 📚 **Geek Corner: The Parallels with Early Docker** |
@@ -482,13 +482,13 @@ This one's more cultural than technical — but it matters. Right now, MCP is mo
 - Demos were magical.  
 - Security teams were horrified.  
 - Devs loved it. Enterprises waited.  
-That's where MCP is today. It's powerful, flexible, and pushing boundaries — but without the right guardrails, it's a little too easy to shoot yourself in the foot with it. |
+That's where MCP is today. It's powerful, flexible, and pushing boundaries - but without the right guardrails, it's a little too easy to shoot yourself in the foot with it. |
 
-I'll be covering some of these gaps — especially around security risks, ethical hacking demonstrations, and how to build safer, wrappers around existing MCP implementations — in a future post in this series. Stay tuned.
+I'll be covering some of these gaps - especially around security risks, ethical hacking demonstrations, and how to build safer, wrappers around existing MCP implementations - in a future post in this series. Stay tuned.
 
-If you're in a large company looking to use MCP, don't let this list scare you — let it guide your architecture.  
+If you're in a large company looking to use MCP, don't let this list scare you - let it guide your architecture.  
 Build wrappers. Build policy engines. Monitor everything.  
-And more importantly, contribute back — because this ecosystem needs both velocity and voices of caution.
+And more importantly, contribute back - because this ecosystem needs both velocity and voices of caution.
 
 ## Conclusion: The Road Ahead
 
