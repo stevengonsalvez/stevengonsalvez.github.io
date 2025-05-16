@@ -1,7 +1,7 @@
 ---
 title: The Complete Software Engineer's Productivity Stack
 published: true
-description: Build the ultimate productivity stack as a software engineer — from engineering your desktop to mastering AI coding assistants.
+description: Build the ultimate productivity stack as a software engineer - from engineering your desktop to mastering AI coding assistants.
 tags: 'productivity, developer, ai, workflow'
 series: The Complete Software Engineer's Productivity Stack
 cover_image: 'https://media.istockphoto.com/id/1459584978/photo/digital-transformation-concept-high-speed-agile-development.webp?a=1&b=1&s=612x612&w=0&k=20&c=vJJzQgQ9bqvJQcMRYqPDWIh3-xosahltw71UEAyGT7A='
@@ -13,23 +13,23 @@ date: '2025-04-29T22:13:45Z'
 # The Complete Software Engineer's Productivity Stack
 
 
-Ever had one of those days where you spent more time fighting your tools than actually building cool stuff? You know what I'm talking about—hunting for that terminal command you *know* you used last month, digging through disorganized notes to find that algorithm explanation, or painfully typing out boilerplate code for the 100th time.
+Ever had one of those days where you spent more time fighting your tools than actually building cool stuff? You know what I'm talking about-hunting for that terminal command you *know* you used last month, digging through disorganized notes to find that algorithm explanation, or painfully typing out boilerplate code for the 100th time.
 
 **We've all been there.** And if we're being honest, most of us are still there more often than we'd like to admit.
 
 ## Why This Series Exists
 
-I've spent the last decade as a software engineer obsessively tweaking, testing, and overhauling my personal workflow. Why? Because I'm fundamentally lazy—in the best possible way. As programmer and author Larry Wall once said, the three virtues of a great programmer are laziness, impatience, and hubris. The good kind of laziness means you'll spend an hour automating a task that takes 5 minutes because you know you'll do that task 100 more times.
+I've spent the last decade as a software engineer obsessively tweaking, testing, and overhauling my personal workflow. Why? Because I'm fundamentally lazy-in the best possible way. As programmer and author Larry Wall once said, the three virtues of a great programmer are laziness, impatience, and hubris. The good kind of laziness means you'll spend an hour automating a task that takes 5 minutes because you know you'll do that task 100 more times.
 
 That's exactly the philosophy behind this series. I want to help you become productively lazy.
 
-Think about it: your brain has a finite amount of cognitive capacity each day—psychologists call this "mental bandwidth." Every decision you make, from what to wear to which algorithm to use, depletes this limited resource. It's why Steve Jobs wore the same outfit daily and why Mark Zuckerberg follows suit (pun intended)—they're eliminating decision fatigue.
+Think about it: your brain has a finite amount of cognitive capacity each day-psychologists call this "mental bandwidth." Every decision you make, from what to wear to which algorithm to use, depletes this limited resource. It's why Steve Jobs wore the same outfit daily and why Mark Zuckerberg follows suit (pun intended)-they're eliminating decision fatigue.
 
 So why waste your precious mental bandwidth remembering command-line flags or hunting for files when your tools could do that for you?
 
 ## What You'll Get From This Series
 
-This isn't just another "Top 10 VS Code Extensions" listicle. We're going deeper—much deeper—into building a cohesive, personalized productivity system specifically for software engineers.
+This isn't just another "Top 10 VS Code Extensions" listicle. We're going deeper-much deeper-into building a cohesive, personalized productivity system specifically for software engineers.
 
 The series breaks down into three major pillars:
 
@@ -37,7 +37,7 @@ The series breaks down into three major pillars:
 
 *Because your computer should work for you, not against you.*
 
-We'll dive into creating a desktop environment that feels like an extension of your mind—from terminal setups that predict what you need, to dotfiles management that keeps your settings perfectly synced across machines, to keyboard-driven workflows that let you navigate your digital world at the speed of thought.
+We'll dive into creating a desktop environment that feels like an extension of your mind-from terminal setups that predict what you need, to dotfiles management that keeps your settings perfectly synced across machines, to keyboard-driven workflows that let you navigate your digital world at the speed of thought.
 
 It's like turning a standard-issue sedan into a Formula 1 race car customized to your exact specifications.
 
@@ -47,7 +47,7 @@ It's like turning a standard-issue sedan into a Formula 1 race car customized to
 
 Information overload is real. As engineers, we consume vast amounts of technical documentation, code examples, architecture patterns, and team knowledge. Traditional note-taking systems buckle under this specialized load.
 
-I'll show you how to build an Obsidian setup that thinks like an engineer—linking concepts like a knowledge graph, storing and retrieving code snippets seamlessly, and ensuring you never lose that brilliant solution you discovered at 2 AM.
+I'll show you how to build an Obsidian setup that thinks like an engineer-linking concepts like a knowledge graph, storing and retrieving code snippets seamlessly, and ensuring you never lose that brilliant solution you discovered at 2 AM.
 
 It's like having your own personal librarian who not only remembers everything but also understands how all those pieces connect.
 
@@ -63,7 +63,7 @@ It's like having an army of junior developers who work at the speed of thought, 
 
 ## The Dashboard 📊
 
-Think of this post as your series dashboard—a living index that I'll update as new articles are published. Bookmark it, and you'll always have the full picture.
+Think of this post as your series dashboard-a living index that I'll update as new articles are published. Bookmark it, and you'll always have the full picture.
 
 ### Series 1: Engineering Your Desktop
 - [ ] **Part 1:** Foundation - The Philosophy of a Developer's Desktop
@@ -93,7 +93,7 @@ Think of this post as your series dashboard—a living index that I'll update as
 - [x] **Part 1:** [Introduction to Model Context Protocol (MCP): The USB‑C of AI Integrations](https://dev.to/stevengonsalvez/introduction-to-model-context-protocol-mcp-the-usb-c-of-ai-integrations-2h76)
 - [x] **Part 2:** [Exploring the MCP Ecosystem: Looking Under the Hood](https://dev.to/stevengonsalvez/exploring-the-mcp-ecosystem-looking-under-the-hood-10bj)
 - [x] **Part 3:** [Stop Losing Prompts: Build Your Own MCP Prompt Registry](https://dev.to/stevengonsalvez/stop-losing-prompts-build-your-own-mcp-prompt-registry-4fi1)
-- [ ] **Part 4:** Ethical Hacking in MCP — The gaping holes,  vulnerabilities & Staying Safe (coming soon)
+- [ ] **Part 4:** Ethical Hacking in MCP - The gaping holes,  vulnerabilities & Staying Safe (coming soon)
 
 
 _(Yep, another rabbit hole so of course the dashboard keeps expanding. 🕳️🐇)_
