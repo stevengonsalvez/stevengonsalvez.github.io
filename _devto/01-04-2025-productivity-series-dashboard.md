@@ -84,7 +84,7 @@ Think of this post as your series dashboard-a living index that I'll update as n
 ### Series 3: AI-Augmented Development
 - [x] **Part 1:** [Finding the Best AI Coding Assistant: From Pure Vibe to Practical Power](https://dev.to/stevengonsalvez/finding-the-best-ai-coding-assistant-from-pure-vibe-to-practical-power-bl8)
 - [x] **Part 2:** [Beyond the Hype: What Truly Makes an AI a Great Coding Partner?](https://dev.to/stevengonsalvez/beyond-the-hype-what-truly-makes-an-ai-a-great-coding-partner-2i7c)
-- [ ] **Part 3:** Performance and Value of AI coding Agents: IDE and Terminal (aider, claude code, openai codex, cursor, cline, windsurf, trae)
+- [x] **Part 3:** [2025s Best AI Coding Tools: Real Cost, Geeky Value & Honest Comparison](https://dev.to/stevengonsalvez/2025s-best-ai-coding-tools-real-cost-geeky-value-honest-comparison-4d63)
 - [ ] **Part 4:** Guide to better precision with your AI coding Tools : Prompts, context, rules (cursor, claude desktop, cline, aider etc)
 - [ ] **Part 5:** Enhancing agentic coding with MCP: building your own Personal AI Infrastructure
 
