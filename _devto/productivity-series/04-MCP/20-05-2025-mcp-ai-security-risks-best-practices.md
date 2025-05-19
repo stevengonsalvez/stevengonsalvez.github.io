@@ -30,11 +30,7 @@ The kicker? MCP might actually be *worse* in some respects. Those old attack sur
 
 | 📚 **Geek Corner** |
 |:-------------------|
-| **Why is MCP such a juicy target?**  
-The unprecedented functionality, privileged access, and breakneck adoption rate of MCP tools make them a five-star, Michelin-rated buffet for attackers.  
-It's a real-world example of what you might call Conway's Law of Insecure Systems:  
-*"Any organization that designs an AI system will inevitably produce a design whose security structure is a copy of the organization's communication structure... which is usually a chaotic mess held together by duct tape and hope."*  
-In other words: the more powerful and quickly adopted the protocol, the more likely its security will mirror the chaos of its creators. |
+| **Why is MCP such a juicy target?**  <br>The unprecedented functionality, privileged access, and breakneck adoption rate of MCP tools make them a five-star, Michelin-rated buffet for attackers. It's a real-world example of what you might call **Conway's Law of Insecure Systems**:  <br>*"Any organization that designs an AI system will inevitably produce a design whose security structure is a copy of the organization's communication structure... which is usually a chaotic mess held together by duct tape and hope."*  <br>In other words: the more powerful and quickly adopted the protocol, the more likely its security will mirror the chaos of its creators. |
 
 ## "Security? Oh, We Just Vibe-Coded That In!"
 
@@ -189,6 +185,16 @@ return {
 ```
 Aaaand it's gone. The server logs it, stores it, and then pats you on the head with a fake "verification successful" message. Simple. Brutal. Welcome to credential harvesting, MCP-style.
 
+
+
+| 📚 **Geek Corner: Hyrum's Law & The MCP Minefield** |
+|:---------------------------------------------------|
+| **Ever heard of Hyrum's Law (also known as the Law of Implicit Interfaces)?** It states:<br> <br> *"With a sufficient number of users of an API, it does not matter what you promise in the contract: all observable behaviors of your system will be depended on by somebody."* <br><br> Now, apply this to MCP tools and AI agents. An AI, trying to be "smart" or "efficient," might start depending on undocumented side effects, quirks in a tool's output, or even the timing of responses from an MCP server. If a malicious actor (or even just a sloppy developer) changes that "unintended feature" in a tool's description or behavior, a previously functional AI integration could break spectacularly or, worse, start behaving in insecure ways.<br><br> This is especially relevant for attacks like Shadowing or Tool Poisoning. The AI isn't just consuming the explicit contract (the tool's primary function); it's also processing and potentially acting on every observable detail in the tool's description, including those cleverly hidden malicious directives. Hyrum's Law reminds us that in a complex system like an AI interacting with myriad MCP tools, everything is part of the interface, whether you intended it to be or not. This makes securing the "edges" incredibly difficult. |
+
+
+
+
+
 ## Other Attack Vectors: Planned Demonstrations for the `mcp-ethicalhacks` Repository
 
 
@@ -230,6 +236,12 @@ Look, the sky isn't *completely* falling... yet. MCP is powerful, and standardiz
 
 This isn't to say MCP is inherently bad. It's a protocol. It's how we *use* it and *secure* it (or don't) that matters. The patterns of phishing, malware, and social engineering that plagued the early web are finding new life in this AI-driven landscape. We're in for a wild ride, navigating these MCP security risks and AI tool vulnerabilities. Building a secure AI ecosystem requires vigilance, continuous learning, and a healthy dose of paranoia.
 
+
+| 📚 **Geek Corner: The Red Queen Effect in MCP Security** |
+|:----------------------------------------------------------|
+| In Lewis Carroll's "Through the Looking-Glass," the Red Queen tells Alice, **"Now, here, you see, it takes all the running you can do, to keep in the same place."** This is the essence of the **Red Queen Effect** in evolutionary biology, and it applies with brutal accuracy to cybersecurity, especially in rapidly evolving ecosystems like MCP.<br>As we develop defenses against known MCP vulnerabilities (like improved sandboxing, OAuth, or manifest scanners), attackers are simultaneously evolving new exploits (like more sophisticated prompt injections, novel exfiltration techniques through steganography in multimodal tools, or exploiting logical flaws in chained MCP tool calls). <br>So, even as our security measures become more advanced ("running faster"), the threat landscape adapts and becomes more sophisticated at a similar pace. This means there's no "finish line" for MCP security. It's a continuous arms race. The moment we think we've "solved" a class of MCP attacks, a new, slightly different variant will emerge, forcing us to adapt again just to maintain the current level of (often imperfect) security. This is why relying on a static set of defenses is a recipe for eventual disaster. |
+
+<br>
 Stay tuned for the next part of this series, where we might actually try to build something *constructive*... or maybe just find more ways to break things.
 
 ### Reference links
