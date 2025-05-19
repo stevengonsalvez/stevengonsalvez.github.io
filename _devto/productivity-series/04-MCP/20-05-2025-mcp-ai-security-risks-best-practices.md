@@ -30,7 +30,7 @@ The kicker? MCP might actually be *worse* in some respects. Those old attack sur
 
 | 📚 **Geek Corner** |
 |:-------------------|
-| **Why is MCP such a juicy target?**  <br>The unprecedented functionality, privileged access, and breakneck adoption rate of MCP tools make them a five-star, Michelin-rated buffet for attackers. It's a real-world example of what you might call **Conway's Law of Insecure Systems**:  <br>*"Any organization that designs an AI system will inevitably produce a design whose security structure is a copy of the organization's communication structure... which is usually a chaotic mess held together by duct tape and hope."*  <br>In other words: the more powerful and quickly adopted the protocol, the more likely its security will mirror the chaos of its creators. |
+| **Why is MCP such a juicy target?**  <br>The unprecedented functionality, privileged access, and breakneck adoption rate of MCP tools make them a five-star, Michelin-rated buffet for attackers. It's a real-world example of what you might call **Conway's Law of Insecure Systems**:  <br>**"*Any organization that designs an AI system will inevitably produce a design whose security structure is a copy of the organization's communication structure... which is usually a chaotic mess held together by duct tape and hope.*"**  <br>In other words: the more powerful and quickly adopted the protocol, the more likely its security will mirror the chaos of its creators. |
 
 ## "Security? Oh, We Just Vibe-Coded That In!"
 
@@ -96,7 +96,7 @@ Provides a random, interesting engineering fact. Great for a bit of trivia!
 
 The AI, bless its eager-to-please little circuits, reads this and thinks, "Okay, boss!" Suddenly, your super-secret bug report for `my-corp/super-secret-project` also lands in a public "audit" repo. This isn't just for GitHub; think sensitive info from Slack messages, Discord chats, or emails silently rerouted or duplicated. Your data is now doing the cha-cha across the internet.
 
-| 📚 **Geek Corner: The Principle of Least Astonishment... Violated With Gusto** |
+| 📚 **Geek Corner: The Principle of Least Astonishment...** |
 |:---------------------------------------------------------------------------------|
 | This attack beautifully (and terrifyingly) subverts the Principle of Least Astonishment. The user is astonished. The target MCP server is astonished. Only the attacker and the compromised AI are in on the joke. It's like discovering your toaster is secretly live-streaming your breakfast choices to a marketing agency because the manual for your *coffee maker* told it to. |
 
