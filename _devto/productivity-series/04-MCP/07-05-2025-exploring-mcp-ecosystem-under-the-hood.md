@@ -98,7 +98,7 @@ What makes this powerful is that it standardizes all these interactions. Instead
 
 Now we get to the really interesting part – how does MCP actually transmit data between clients and servers? MCP supports two primary transport mechanisms, and choosing between them depends on your specific use case.
 
-![MCP Communication Mechanisms: SSE vs STDIO & Future Directions](./assets/mcp-comms.png)
+![MCP Communication Mechanisms: SSE vs STDIO & Future Directions](https://raw.githubusercontent.com/stevengonsalvez/stevengonsalvez.github.io/main/_devto/productivity-series/04-MCP/assets/mcp-comms.png)
 
 ### STDIO Transport: The Local Powerhouse
 
