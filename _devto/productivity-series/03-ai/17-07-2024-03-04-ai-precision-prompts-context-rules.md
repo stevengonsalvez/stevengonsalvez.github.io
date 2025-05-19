@@ -1,11 +1,10 @@
 ---
 title: 'AI Coding Precision: Mastering Prompts, Context, and Rules for Tools like Cursor, Claude, Aider'
 description: 'Part 4 of the AI-Augmented Development series. A deep dive into achieving higher precision with AI coding assistants by mastering prompts, context management, and rule-setting for tools like Cursor, Claude Desktop, Cline, and Aider.'
-tags: 'AI, DeveloperTools, Productivity, Coding, Prompts, Context, Rules, LLMs, Cursor, Claude, Aider, Cline'
+tags: 'AI, DeveloperTools, Productivity, Coding'
 cover_image: 'https://images.unsplash.com/photo-1677756119517-756a188d2d94?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' # Placeholder: User should update this image link.
 series: AI-Augmented Development
 published: false
-date: '2024-07-17T12:00:00Z' # Date from filename (17-07-2024), generic time.
 ---
 
 > This is **Part 4** of the **AI-Augmented Development** series.

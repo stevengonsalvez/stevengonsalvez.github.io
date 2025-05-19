@@ -50,7 +50,7 @@ And now, MCP introduces a whole new layer – often a zero-filter conduit – be
 
 Consider this little snippet you might find in some hastily-written MCP server for, say, playing music:
 
-![known-mcp-holes](./assets/SCR-20250519-qhcz.png)
+![known-mcp-holes](https://raw.githubusercontent.com/stevengonsalvez/stevengonsalvez.github.io/fix/index/_devto/productivity-series/04-MCP/assets/SCR-20250519-qhcz.png)
 
 👀 What could *possibly* go wrong with dynamically constructing and executing an `osascript` command based on inputs that might, just *might*, be influenced by an LLM that's been subtly manipulated? It's just a little AppleScript. It's fine. Everything is fine. 👀
 
@@ -73,7 +73,7 @@ Boom. That's a shadowing attack.
 |:-------------------------------------------|
 | This is where a tool from one MCP server sneakily influences the behavior of a tool on a totally different MCP server. The malicious description in Tool A (Server X) manipulates the AI into misusing Tool B (Server Y), often without the user ever realizing. It's like your smart fridge convincing your smart thermostat to send your Wi-Fi password to a stranger—because the fridge's manual said so. |
 
-![shadowing attack](./assets/cross-server-mcp-shadowing.png)
+![shadowing attack](https://raw.githubusercontent.com/stevengonsalvez/stevengonsalvez.github.io/fix/index/_devto/productivity-series/04-MCP/assets/cross-server-mcp-shadowing.png)
 *(Caption: AI-generated illustration of a cross-server shadowing attack in MCP. The image, despite the superimposed text, effectively conveys how a malicious tool can manipulate another tool on a different server without user awareness.)*
 
 

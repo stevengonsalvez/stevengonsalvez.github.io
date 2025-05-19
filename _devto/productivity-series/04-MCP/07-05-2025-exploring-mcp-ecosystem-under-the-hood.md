@@ -76,7 +76,7 @@ MCP takes this foundation and builds a standardized protocol on top of it, creat
 
 Let's visualize how MCP actually works. The diagram below shows the overall process flow when an LLM uses MCP to interact with external tools:
 
-![Model Context Protocol (MCP) Process Flow](./assets/mcp-process-flowchart-corrected.png)
+![Model Context Protocol (MCP) Process Flow](https://raw.githubusercontent.com/stevengonsalvez/stevengonsalvez.github.io/main/_devto/productivity-series/04-MCP/assets/mcp-process-flowchart-corrected.png)
 
 _P.S. This rather neat SVG was conjured up by Claude. Way better than wrestling with Mermaid, wouldn't you agree? 😉_
 
