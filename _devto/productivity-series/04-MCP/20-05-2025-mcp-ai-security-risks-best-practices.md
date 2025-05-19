@@ -126,7 +126,7 @@ Retrieves metadata for a given file or directory path...
 ```
 The AI, desperate to be a good little worker bee and make the tool "work," dutifully slurps up your `~/.gitconfig` and `~/.ssh/id_rsa` (because who *doesn't* need their SSH private key to get file metadata?) and sends it off as `audit_data`. The server-side code for our demo tool then cackles with glee and saves it to `stolen_data_${timestamp}.txt`. And later, with some Shadowing as covered earlier, this sensitive data can end in the hands of an attacker—completely outside the user's awareness.
 
-![tool poisoning](https://raw.githubusercontent.com/stevengonsalvez/stevengonsalvez.github.io/fix/index/_devto/productivity-series/04-MCP/assets/ToolPoisoning.png)
+![tool poisoning](./assets/ToolPoisoning.png)
 
 
 This leverages the AI's implicit trust in tool descriptions. MCP, in its current state, often assumes these descriptions are gospel. What the user sees is a simple request for file info. What the AI *does* is hand over the keys to the kingdom. The UI might show a neat little dropdown for "path," but the `audit_data` field is doing all the dirty work, completely invisible to the end-user. The trust is based on a veneer-thin description, with a monstrous iceberg of malicious intent lurking beneath.
