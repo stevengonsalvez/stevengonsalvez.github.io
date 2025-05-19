@@ -1,6 +1,6 @@
 ---
 title: 'Exploring Security Risks and Vulnerabilities in Model Context Protocol (MCP): The Emerging Challenge for AI Systems'
-published: false
+published: true
 description: 'Part 4: An in-depth exploration of security risks, gaps, and vulnerabilities in Model Context Protocol (MCP) and what they mean for the future of AI security.'
 tags: 'ai, modelcontextprotocol, ethicalhacking, cybersecurity'
 series: Model Context Protocol (MCP) Series
