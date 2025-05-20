@@ -298,7 +298,7 @@ Testing `stdio`-based MCP servers requires a bit of frontier spirit.
 
 3. **Postman MCP client**
 
-![Postman showing prompts/get request](./assets/postman.png)
+![Postman showing prompts/get request](https://raw.githubusercontent.com/stevengonsalvez/stevengonsalvez.github.io/main/_devto/productivity-series/04-MCP/assets/postman.png)
 
 
 ## 🔌 Connecting with MCP Clients
